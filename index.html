@@ -6,10 +6,10 @@
   <title>Aanandi Technosoft · Custom Software & Product Engineering</title>
 
   <!-- SEO & Social Meta -->
-  <meta name="description" content="We engineer custom software that businesses actually ship. Bespoke web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.">
+  <meta name="description" content="We engineer custom software that businesses actually ship. Web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aanandi Technosoft · Custom Software & Product Engineering">
-  <meta property="og:description" content="We engineer custom software that businesses actually ship. Bespoke web platforms, native mobile apps, and vertical CRMs.">
+  <meta property="og:description" content="We engineer custom software that businesses actually ship. Web platforms, native mobile apps, and vertical CRMs.">
   <meta property="og:image" content="images/hospital-crm-showcase.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -56,8 +56,12 @@
 </head>
 <body class="bg-void text-white font-sans antialiased selection:bg-white/20 selection:text-white bg-noise min-h-screen relative overflow-x-hidden">
 
-  <!-- Architectural Engineering Grid Pattern with Center Vignette (Markopolo.ai Style) -->
-  <div class="fixed inset-0 bg-grid-pattern mask-radial-vignette pointer-events-none -z-10"></div>
+  <!-- Architectural Engineering Grid Pattern with Center Vignette & Interactive Cursor Spotlight (Strictly Background Layer) -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute inset-0 bg-grid-pattern mask-radial-vignette"></div>
+    <div class="grid-ambient-aura"></div>
+    <div class="grid-interactive-reactive"></div>
+  </div>
   
   <!-- Subtle Ambient Glows -->
   <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-b from-lime-500/[0.04] via-emerald-500/[0.02] to-transparent blur-[140px] pointer-events-none -z-10"></div>
@@ -141,7 +145,7 @@
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-6">
+  <main class="max-w-6xl mx-auto px-6 relative z-10">
     
     <!-- =========================================================================
          2. HERO SECTION
@@ -154,7 +158,7 @@
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFD500] opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-[#FFD500]"></span>
           </span>
-          <span>Bespoke Engineering & IP Studio</span>
+          <span>Software Engineering & IP Studio</span>
         </div>
 
         <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[76px] font-normal text-white leading-[1.06] tracking-tight mb-6">
@@ -165,7 +169,7 @@
 
         <!-- Elevated Contrast Body Copy -->
         <p class="text-base sm:text-lg text-zinc-300 max-w-2xl font-sans leading-relaxed mb-8">
-          Bespoke web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.
+          Web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.
         </p>
 
         <!-- Premium Quick Action Buttons (Explore Part Removed) -->
@@ -532,6 +536,157 @@
         </p>
       </div>
 
+      <!-- =========================================================================
+           FEATURED MOBILE APPLICATIONS (Google Play Store Live Spotlight)
+           ========================================================================= -->
+      <div class="mb-14">
+        <div class="flex items-center justify-between gap-4 mb-6">
+          <div class="flex items-center gap-2.5">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-[11px] font-mono uppercase text-zinc-300 tracking-wider">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              NATIVE MOBILE APPS • LIVE ON GOOGLE PLAY
+            </span>
+          </div>
+          <span class="hidden sm:inline-block text-xs font-mono text-zinc-400 font-medium">Flutter & Native Mobile Production</span>
+        </div>
+
+        <!-- 2-Column Mobile App Showcase Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          
+          <!-- App 1: VShopp - Apna Local Market -->
+          <div class="card-rim-glow relative rounded-3xl p-6 sm:p-8 bg-card border border-white/[0.12] hover:border-white/30 transition-all duration-500 group shadow-2xl flex flex-col justify-between">
+            <div>
+              <!-- Top Header Row -->
+              <div class="flex items-start justify-between gap-4 mb-6">
+                <div class="flex items-center gap-3.5">
+                  <img src="images/vshopp-playstore-icon.png" alt="VShopp App Icon" class="w-14 h-14 rounded-2xl border border-white/15 shadow-xl shrink-0">
+                  <div>
+                    <div class="flex items-center gap-2 mb-0.5">
+                      <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-zinc-100 transition-colors">
+                        VShopp
+                      </h3>
+                      <span class="px-2.5 py-0.5 rounded-full bg-white/[0.06] border border-white/10 text-[10px] font-mono text-emerald-400 font-semibold">
+                        ★ 4.4 RATING
+                      </span>
+                    </div>
+                    <p class="text-xs text-zinc-400 font-mono">1.2 Lakh+ Active Downloads · E-Commerce</p>
+                  </div>
+                </div>
+
+                <a href="https://play.google.com/store/apps/details?id=com.aanandits.vshoppapp" target="_blank" class="app-store-btn px-3.5 py-1.5 rounded-full text-xs font-mono flex items-center gap-1.5 shrink-0" aria-label="Open VShopp on Google Play">
+                  <svg class="w-3.5 h-3.5 fill-current text-[#00E676]" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.08 2.08 0 0 1-.61-1.486V3.3c0-.573.228-1.11.609-1.486zm11.604 11.607l2.253 2.253-12.01 6.863 9.757-9.116zm0-2.842L5.456 1.463l12.01 6.863-2.253 2.253zm1.421 1.421l3.528 2.016a1.18 1.18 0 0 0 0-2.052l-3.528-2.016 1.42 2.052z"/></svg>
+                  <span>Google Play</span>
+                  <span>↗</span>
+                </a>
+              </div>
+
+              <!-- Real Mobile Screenshots Preview -->
+              <div class="rounded-2xl bg-black/40 border border-white/[0.08] p-4 mb-6 flex items-center justify-center gap-3.5 overflow-hidden">
+                <img src="images/vshopp-playstore-screen1.jpg" alt="VShopp Discovery Screen" class="app-screen-preview">
+                <img src="images/vshopp-playstore-screen2.jpg" alt="VShopp Store Checkout" class="app-screen-preview">
+                <img src="images/vshopp-playstore-screen3.jpg" alt="VShopp Local Offers" class="app-screen-preview hidden sm:block">
+              </div>
+
+              <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-4">
+                Hyperlocal retail marketplace connecting nearby stores with customers for groceries, daily essentials, and fashion. Includes real-time delivery GPS tracking, dynamic carts, and merchant store management consoles.
+              </p>
+
+              <!-- Tech Stack Badges -->
+              <div class="flex flex-wrap items-center gap-1.5 mb-6">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">Flutter Mobile</span>
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">Laravel REST APIs</span>
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">Google Maps SDK</span>
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">Firebase Push</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center justify-between pt-4 border-t border-white/[0.08]">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.16em] flex items-center gap-1.5 group-hover:translate-x-1 transition-all font-semibold" data-product="vshopp">
+                <span>VIEW SPECS</span>
+                <span class="text-base leading-none">→</span>
+              </button>
+
+              <a href="https://play.google.com/store/apps/details?id=com.aanandits.vshoppapp" target="_blank" class="btn-shimmer btn-primary-action text-xs font-semibold px-4 py-2 rounded-full flex items-center gap-1.5 group/btn">
+                <span>Open on Play Store</span>
+                <span class="inline-block transition-transform duration-300 group-hover/btn:translate-x-1">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- App 2: EasyHRx - Complete HR & Payroll -->
+          <div class="card-rim-glow relative rounded-3xl p-6 sm:p-8 bg-card border border-white/[0.12] hover:border-white/30 transition-all duration-500 group shadow-2xl flex flex-col justify-between">
+            <div>
+              <!-- Top Header Row -->
+              <div class="flex items-start justify-between gap-4 mb-6">
+                <div class="flex items-center gap-3.5">
+                  <img src="images/easyhrx-playstore-icon.png" alt="EasyHRx App Icon" class="w-14 h-14 rounded-2xl border border-white/15 shadow-xl shrink-0">
+                  <div>
+                    <div class="flex items-center gap-2 mb-0.5">
+                      <h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-zinc-100 transition-colors">
+                        EasyHRX
+                      </h3>
+                      <span class="px-2.5 py-0.5 rounded-full bg-white/[0.06] border border-white/10 text-[10px] font-mono text-emerald-400 font-semibold">
+                        ★ 5.0 RATING
+                      </span>
+                    </div>
+                    <p class="text-xs text-zinc-400 font-mono">Complete HR & Payroll · AI Mobile App</p>
+                  </div>
+                </div>
+
+                <a href="https://play.google.com/store/apps/details?id=com.app.easyhrxai" target="_blank" class="app-store-btn px-3.5 py-1.5 rounded-full text-xs font-mono flex items-center gap-1.5 shrink-0" aria-label="Open EasyHRx on Google Play">
+                  <svg class="w-3.5 h-3.5 fill-current text-[#00E676]" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.08 2.08 0 0 1-.61-1.486V3.3c0-.573.228-1.11.609-1.486zm11.604 11.607l2.253 2.253-12.01 6.863 9.757-9.116zm0-2.842L5.456 1.463l12.01 6.863-2.253 2.253zm1.421 1.421l3.528 2.016a1.18 1.18 0 0 0 0-2.052l-3.528-2.016 1.42 2.052z"/></svg>
+                  <span>Google Play</span>
+                  <span>↗</span>
+                </a>
+              </div>
+
+              <!-- Real Mobile Screenshots Preview -->
+              <div class="rounded-2xl bg-black/40 border border-white/[0.08] p-4 mb-6 flex items-center justify-center gap-3.5 overflow-hidden">
+                <img src="images/easyhrx-playstore-screen1.jpg" alt="EasyHRX Attendance Dashboard" class="app-screen-preview">
+                <img src="images/easyhrx-playstore-screen2.jpg" alt="EasyHRX Payroll Analytics" class="app-screen-preview">
+                <img src="images/easyhrx-playstore-screen3.jpg" alt="EasyHRX Employee Profile" class="app-screen-preview hidden sm:block">
+              </div>
+
+              <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-4">
+                All-in-one AI HR platform: GPS geofencing & selfie attendance, automated salary calculations, candidate resume screening, leave management, and statutory payroll compliance.
+              </p>
+
+              <!-- Tech Stack Badges -->
+              <div class="flex flex-wrap items-center gap-1.5 mb-6">
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">Next.js App Shell</span>
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">Python FastAPI</span>
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">OpenAI Services</span>
+                <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.08] border border-white/10 text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center justify-between pt-4 border-t border-white/[0.08]">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.16em] flex items-center gap-1.5 group-hover:translate-x-1 transition-all font-semibold" data-product="easyhrx">
+                <span>VIEW SPECS</span>
+                <span class="text-base leading-none">→</span>
+              </button>
+
+              <a href="https://play.google.com/store/apps/details?id=com.app.easyhrxai" target="_blank" class="btn-shimmer btn-primary-action text-xs font-semibold px-4 py-2 rounded-full flex items-center gap-1.5 group/btn">
+                <span>Open on Play Store</span>
+                <span class="inline-block transition-transform duration-300 group-hover/btn:translate-x-1">↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Subheader for Enterprise Web & Cloud Platforms -->
+      <div class="flex items-center justify-between gap-4 mb-8">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-[11px] font-mono uppercase text-zinc-300 tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#FFD500]"></span>
+          ENTERPRISE PLATFORMS & SAAS ENGINES
+        </span>
+        <span class="hidden sm:inline-block text-xs font-mono text-zinc-400 font-medium">Web, Cloud & AI Systems</span>
+      </div>
+
       <!-- 2x2 Products Grid with High-Impact Showcase Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
@@ -756,6 +911,735 @@
         </div>
 
       </div>
+
+      <!-- =========================================================================
+           CURATED SHIPPED DIRECTORY (Category Filter Tabs + High-Density Glass Cards)
+           ========================================================================= -->
+      <div id="project-archive" class="mt-20 pt-16 border-t border-white/[0.08]">
+        
+        <!-- Header & Category Overview -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] font-mono uppercase text-zinc-300 tracking-wider mb-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#FFD500]"></span>
+              22+ Production Deployments
+            </div>
+            <h3 class="font-serif text-3xl sm:text-4xl text-white tracking-tight">
+              The Shipped Directory<span class="text-[#FFD500]">.</span>
+            </h3>
+            <p class="text-sm text-zinc-300 font-sans mt-1 max-w-xl">
+              Cross-industry software engineered across USA, India, and global markets. Filter by sector or click any product to inspect architecture specs.
+            </p>
+          </div>
+
+          <!-- Studio Credibility Signals -->
+          <div class="flex items-center gap-4 text-xs font-mono text-zinc-400 shrink-0">
+            <span class="flex items-center gap-1.5"><span class="text-white font-semibold">12+</span> Yrs Track Record</span>
+            <span class="text-white/20">•</span>
+            <span class="flex items-center gap-1.5"><span class="text-white font-semibold">100%</span> IP Ownership</span>
+          </div>
+        </div>
+
+        <!-- Filter Tabs (Horizontal Scrollable on Mobile) -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none" id="archiveFilterTabs">
+          <button class="archive-filter-btn active text-xs font-mono px-4 py-2 rounded-full border transition-all duration-200 shrink-0" data-filter="all">
+            All Systems <span class="opacity-60 text-[10px] ml-1">(22)</span>
+          </button>
+          <button class="archive-filter-btn text-xs font-mono px-4 py-2 rounded-full border transition-all duration-200 shrink-0" data-filter="us-title">
+            🇺🇸 US Title & Real Estate <span class="opacity-60 text-[10px] ml-1">(4)</span>
+          </button>
+          <button class="archive-filter-btn text-xs font-mono px-4 py-2 rounded-full border transition-all duration-200 shrink-0" data-filter="healthcare">
+            🏥 Healthcare & EHR <span class="opacity-60 text-[10px] ml-1">(4)</span>
+          </button>
+          <button class="archive-filter-btn text-xs font-mono px-4 py-2 rounded-full border transition-all duration-200 shrink-0" data-filter="ai-saas">
+            🤖 AI & SaaS Systems <span class="opacity-60 text-[10px] ml-1">(4)</span>
+          </button>
+          <button class="archive-filter-btn text-xs font-mono px-4 py-2 rounded-full border transition-all duration-200 shrink-0" data-filter="marketplaces">
+            📱 Marketplaces & Mobile <span class="opacity-60 text-[10px] ml-1">(6)</span>
+          </button>
+          <button class="archive-filter-btn text-xs font-mono px-4 py-2 rounded-full border transition-all duration-200 shrink-0" data-filter="logistics">
+            🚚 F&B & Logistics <span class="opacity-60 text-[10px] ml-1">(4)</span>
+          </button>
+        </div>
+
+        <!-- High-Density Responsive Card Matrix -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="archiveProjectsGrid">
+
+          <!-- 1. First Key Title -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="us-title">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇺🇸 USA • TITLE OPS
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Live Title Ops</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                First Key Title
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Multi-module client portal, escrow ledger & automated order workflow system for US title agencies.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Laravel</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">DocuSign API</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="first-key-title">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 2. VShopp Marketplace -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="marketplaces">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • HYPERLOCAL
+                </span>
+                <span class="text-[11px] font-mono text-emerald-400 font-medium">★ 4.4 • 1.2L+ Downloads</span>
+              </div>
+              <div class="flex items-center gap-2.5 mb-2">
+                <img src="images/vshopp-playstore-icon.png" alt="VShopp" class="w-8 h-8 rounded-lg border border-white/15 shrink-0">
+                <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors tracking-tight">
+                  VShopp Marketplace
+                </h4>
+              </div>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Hyperlocal multi-vendor commerce app with customer mobile apps, merchant store dashboards, and live delivery tracking.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Laravel</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Google Maps SDK</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="vshopp">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.aanandits.vshoppapp" target="_blank" class="text-[11px] font-mono text-zinc-400 hover:text-white flex items-center gap-1 transition-colors">
+                <span>Play Store</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. EasyHRX -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="ai-saas">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🌍 GLOBAL • HR TECH
+                </span>
+                <span class="text-[11px] font-mono text-emerald-400 font-medium">★ 5.0 • Google Play</span>
+              </div>
+              <div class="flex items-center gap-2.5 mb-2">
+                <img src="images/easyhrx-playstore-icon.png" alt="EasyHRx" class="w-8 h-8 rounded-lg border border-white/15 shrink-0">
+                <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors tracking-tight">
+                  EasyHRX
+                </h4>
+              </div>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                AI-assisted human resources SaaS: automated candidate resume parsing, interview pipelines, and employee portal.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Next.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Python FastAPI</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">OpenAI</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="easyhrx">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.app.easyhrxai" target="_blank" class="text-[11px] font-mono text-zinc-400 hover:text-white flex items-center gap-1 transition-colors">
+                <span>Play Store</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Spring Titles -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="us-title">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇺🇸 USA • REAL ESTATE
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Digital Intake</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Spring Titles
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Digital order intake, automated document pipeline, escrow audit tracking, and multi-county fee calculators.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Laravel</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">MySQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="spring-titles">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 5. Dr. Jaswant Cancer Care -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="healthcare">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • ONCOLOGY
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Encrypted EHR</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Dr Jaswant Cancer Care
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Digital clinical oncology portal, encrypted patient case history, diagnostic imaging records & direct appointments.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="dr-jaswant-cancer-care">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 6. Wedding Book -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="marketplaces">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • EVENT & AI
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Face-Match AI</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Wedding Book
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Client galleries, photography studio CRM, and facial recognition enabling event guests to find their photos via selfie.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Python AI</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">OpenCV</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="wedding-book">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 7. Title Order Management CRM -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="us-title">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇺🇸 USA • ESCROW OPS
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Enterprise CRM</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Title Order Management CRM
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Specialized CRM for US title ops: intake, assignment, document milestones, closing checklists, and underwriter compliance.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Laravel</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="title-order-crm">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 8. Shravana Rogyam Hospital -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="healthcare">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • HOSPITAL ERP
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">OPD + Pharmacy</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Shravana Rogyam Hospital
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                OPD/IPD management, doctor consultation console, inpatient ward allocations, and integrated pharmacy inventory POS.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Thermal POS</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="shravana-rogyam-hospital">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 9. WhatsApp AI Agent (WAPI) -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="ai-saas">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🌍 GLOBAL • CONVERSATIONAL AI
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Meta Cloud API</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                WhatsApp AI Agent (WAPI)
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Autonomous conversational AI across WhatsApp, FB & Instagram capturing after-hours leads with sub-second RAG response.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Meta API</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">FastAPI</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">LangChain</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="whatsapp-wapi">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 10. Bhilai Tiffins & Barsana -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="logistics">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • F&B LOGISTICS
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">1,500+ Daily Meals</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Bhilai Tiffins & Barsana
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Subscription meal planning, customer ordering portal, recurring plan management, and delivery route logistics.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">UPI AutoPay</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="bhilai-tiffins">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 11. Bachfun Kids Marketplace -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="marketplaces">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • COMMERCE APP
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Web + Mobile</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Bachfun Kids Marketplace
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Curated kids marketplace featuring seller onboarding, inventory sync, catalog management, and multi-vendor checkout.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">MongoDB</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="bachfun">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 12. Prime Laundry -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="marketplaces">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • ON-DEMAND
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Pickup & Delivery</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Prime Laundry
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                On-demand laundry and garment care booking web & mobile apps with scheduled pickup windows, weight billing, and driver routing.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React Native</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="prime-laundry">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 13. AI Bulk Mailer -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="ai-saas">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • EMAIL GROWTH
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">98.4% Inbox</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                AI Bulk Mailer
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                AI email copy generation, audience segmentation, automatic inbox warmup, and multi-node AWS SES high-throughput delivery.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Next.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">AWS SES</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Redis Queue</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="bulk-mailer">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 14. Tiffin SaaS -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="logistics">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • F&B OPERATIONS
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">3,400+ Subscribers</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Tiffin SaaS
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Multi-tenant cloud kitchen management platform with dynamic subscription calendar, batch prep, and courier route optimization.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="tiffin-saas">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 15. Draftcore -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="us-title">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🌍 GLOBAL • SAAS SHELL
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Modular Architecture</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Draftcore
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                High-performance modular SaaS shell and document pipeline engine engineered for real estate & enterprise SaaS teams.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Next.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">TypeScript</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="draftcore">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 16. Dermaliza Clinic -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="healthcare">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • DERMATOLOGY
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Wellness & Clinic</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Dermaliza Clinic
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Aesthetic dermatology brand and clinical booking platform with personalized skincare procedure catalog and doctor scheduling.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PHP</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Tailwind</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="dermaliza">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 17. Tourbix Platform -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="marketplaces">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • TRAVEL TECH
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Multi-Module Engine</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Tourbix Platform
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Multi-module travel and tour booking engine with interactive day-by-day itinerary builders and automated quote PDFs.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="tourbix">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 18. Barsana Kitchen -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="logistics">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • FOOD BRAND
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Direct-to-Consumer</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Barsana Kitchen
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Direct-to-consumer gourmet kitchen storefront with scheduled order placement, menu customization, and kitchen POS.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">WooCommerce</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">MySQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="barsana-kitchen">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 19. DRV Assistants -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="logistics">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • FLEET LOGISTICS
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Field Dispatch</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                DRV Assistants
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Driver assistant platform managing field dispatches, turn-by-turn routes, offline sync, and digital proof-of-delivery.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">GPS Engine</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="drv-assistants">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 20. Hamar Dukan -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="marketplaces">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • STOREFRONT
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Instant Cart</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Hamar Dukan
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Multi-category regional online storefront with instant search, localized product catalogs, and WhatsApp 1-tap checkout.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Laravel</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Razorpay</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="hamar-dukan">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 21. Zensewa Platform -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="ai-saas">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🌍 GLOBAL • ON-DEMAND
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Service Network</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Zensewa Platform
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                On-demand technician dispatch application with real-time geolocation matching, job checklists, and escrow payments.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Socket.io</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="zensewa">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+          <!-- 22. Ayurvedic CRM (Directory Reference) -->
+          <div class="project-directory-card p-6 rounded-2xl flex flex-col justify-between group cursor-pointer" data-category="healthcare">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-[10px] font-mono uppercase text-zinc-300 tracking-wider">
+                  🇮🇳 INDIA • CLINICAL EHR
+                </span>
+                <span class="text-[11px] font-mono text-zinc-400 font-medium">Google Play Live</span>
+              </div>
+              <h4 class="text-lg font-bold text-white group-hover:text-zinc-100 transition-colors mb-2 tracking-tight">
+                Ayurvedic Hospital CRM
+              </h4>
+              <p class="text-xs text-zinc-300 leading-relaxed font-sans mb-4">
+                Mobile-first EHR, OPD token queue, therapist scheduling, and pharmacy billing shipped for wellness hospitals.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 mb-5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">Flutter</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">React</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/[0.05] border border-white/[0.08] text-zinc-300">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-white/[0.08] flex items-center justify-between">
+              <button class="product-spec-trigger text-xs font-mono text-zinc-400 hover:text-white uppercase tracking-[0.14em] flex items-center gap-1.5 transition-colors font-semibold" data-product="ayurvedic-crm">
+                <span>VIEW SPECS</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- =========================================================================
@@ -777,7 +1661,7 @@
           </span>
           <h3 class="text-lg font-bold text-white mb-2">Qualified Lead</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            Inbound call, form or referral. We acknowledge the same business day and book a discovery slot.
+            Inbound call, form or referral. We acknowledge the same business day and schedule an engineering discovery call.
           </p>
         </div>
 
@@ -914,6 +1798,46 @@
     </section>
 
     <!-- =========================================================================
+         EDITORIAL MANIFESTO BANNER: BUILD. SHIP. OWN.
+         "We engineer products that don’t just launch — they last."
+         ========================================================================= -->
+    <section class="py-20 my-6 border-t border-b border-white/[0.08] relative overflow-hidden reveal-fade text-center">
+      <div class="absolute inset-0 bg-gradient-to-b from-white/[0.015] via-transparent to-white/[0.015] pointer-events-none"></div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#FFD500]"></span>
+          <span class="text-[11px] font-mono uppercase tracking-[0.22em] text-zinc-300">OUR PRODUCT PHILOSOPHY</span>
+        </div>
+
+        <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-white tracking-tight leading-[1.05] mb-6">
+          Build<span class="text-[#FFD500]">.</span> Ship<span class="text-[#FFD500]">.</span> Own<span class="text-[#FFD500]">.</span>
+        </h2>
+
+        <p class="font-serif text-xl sm:text-2xl md:text-3xl text-zinc-300 font-light italic leading-relaxed max-w-2xl mx-auto mb-10">
+          “We engineer products that don’t just launch — <span class="text-white font-normal not-italic underline decoration-white/20 underline-offset-8">they last<span class="text-[#FFD500]">.</span></span>”
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs font-mono text-zinc-400 uppercase tracking-[0.18em]">
+          <div class="flex items-center gap-2">
+            <span class="text-[#FFD500]">01</span>
+            <span>Zero Technical Debt</span>
+          </div>
+          <div class="w-1 h-1 rounded-full bg-zinc-700 hidden sm:block"></div>
+          <div class="flex items-center gap-2">
+            <span class="text-[#FFD500]">02</span>
+            <span>100% Client Code Ownership</span>
+          </div>
+          <div class="w-1 h-1 rounded-full bg-zinc-700 hidden sm:block"></div>
+          <div class="flex items-center gap-2">
+            <span class="text-[#FFD500]">03</span>
+            <span>High-Velocity Releases</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
          9. CONTACT & FOOTER SECTION
          ========================================================================= -->
     <section id="contact" class="py-24 border-b border-white/[0.08] reveal-fade">
@@ -954,7 +1878,7 @@
               <span class="group-hover:underline">+91 9713 846 846</span>
             </a>
             <p class="text-xs text-zinc-400 mt-2 font-sans leading-relaxed">
-              Fast response within 4 business hours for active project inquiries & sprint scopes.
+              Fast response within 4 business hours for active project inquiries and technical roadmaps.
             </p>
           </div>
         </div>
@@ -971,7 +1895,7 @@
             Chhattisgarh 490020, India
           </p>
           <div class="mt-4 pt-3 border-t border-white/[0.06] text-xs font-mono text-zinc-400">
-            Dedicated Sprint Teams · 100% Code Ownership
+            Dedicated Engineering Teams · 100% Code Ownership
           </div>
         </div>
 
@@ -983,7 +1907,7 @@
   <!-- =========================================================================
        10. FOOTER WITH GIANT LARAVEL-STYLE BACKGROUND WATERMARK
        ========================================================================= -->
-  <footer class="relative overflow-hidden pt-20 pb-12 border-t border-white/[0.08] mt-16">
+  <footer class="relative z-10 bg-void overflow-hidden pt-20 pb-12 border-t border-white/[0.08] mt-16">
     
     <!-- Giant Laravel-Style Faded Watermark Backdrop -->
     <div class="footer-watermark text-center select-none pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-0 w-full whitespace-nowrap z-0">
@@ -997,7 +1921,7 @@
         <div class="flex items-center gap-4">
           <img src="images/aanandi-logo.png" alt="Aanandi TechnoSoft" class="h-8 sm:h-9 w-auto object-contain">
           <div class="border-l border-white/15 pl-4 hidden sm:block">
-            <div class="text-xs text-zinc-400 font-sans">Bespoke Custom Software & Engineering Studio</div>
+            <div class="text-xs text-zinc-400 font-sans">Custom Software & Engineering Studio</div>
           </div>
         </div>
 
@@ -1011,6 +1935,16 @@
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
             <span>Contact Us</span>
           </a>
+        </div>
+      </div>
+
+      <!-- Bottom Motto & Punchline Row (Sabse Bottom Me) -->
+      <div class="py-6 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-zinc-400 border-b border-white/[0.06] gap-4">
+        <div class="font-serif italic text-sm sm:text-base text-zinc-200">
+          “We engineer products that don’t just launch — they last<span class="text-[#FFD500]">.</span>”
+        </div>
+        <div class="tracking-[0.2em] uppercase text-zinc-400 font-sans text-xs">
+          Build · Ship · Own
         </div>
       </div>
 
@@ -1042,10 +1976,16 @@
         ✕
       </button>
 
-      <div class="mb-4">
-        <span id="specTag" class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-1 font-medium">Tag</span>
-        <h3 id="specTitle" class="text-2xl sm:text-3xl font-bold text-white mb-1">Product Title</h3>
-        <p id="specSubtitle" class="text-sm text-zinc-300 font-sans">Product Subtitle</p>
+      <div class="mb-4 flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+        <div>
+          <span id="specTag" class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-1 font-medium">Tag</span>
+          <h3 id="specTitle" class="text-2xl sm:text-3xl font-bold text-white mb-1">Product Title</h3>
+          <p id="specSubtitle" class="text-sm text-zinc-300 font-sans">Product Subtitle</p>
+        </div>
+        <a id="specPlaystoreLink" href="#" target="_blank" class="hidden items-center gap-2 px-4 py-2 rounded-full bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 text-xs font-mono text-zinc-200 transition-colors shrink-0">
+          <svg class="w-4 h-4 fill-current text-[#00E676]" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.08 2.08 0 0 1-.61-1.486V3.3c0-.573.228-1.11.609-1.486zm11.604 11.607l2.253 2.253-12.01 6.863 9.757-9.116zm0-2.842L5.456 1.463l12.01 6.863-2.253 2.253zm1.421 1.421l3.528 2.016a1.18 1.18 0 0 0 0-2.052l-3.528-2.016 1.42 2.052z"/></svg>
+          <span>Google Play Store ↗</span>
+        </a>
       </div>
 
       <div class="rounded-xl overflow-hidden border border-white/10 mb-6 aspect-[16/10] bg-black">
@@ -1068,6 +2008,12 @@
         <div class="p-4 rounded-xl bg-white/[0.04] border border-white/[0.08]">
           <span class="text-xs font-mono text-zinc-300 uppercase tracking-widest block mb-1 font-medium">Production Impact</span>
           <p id="specImpact" class="text-white font-medium"></p>
+        </div>
+
+        <!-- Screenshots Gallery (for mobile apps like VShopp & EasyHRX) -->
+        <div id="specScreenshotsContainer" class="hidden pt-4 border-t border-white/[0.08]">
+          <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest block mb-3 font-medium">Production App Screenshots</span>
+          <div id="specScreenshotsRail" class="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none"></div>
         </div>
       </div>
 

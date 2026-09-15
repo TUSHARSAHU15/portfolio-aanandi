@@ -58,6 +58,33 @@ html.lenis, html.lenis body {
   -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 28%, black 40%, transparent 100%);
 }
 
+/* Dynamic Cursor-Reactive Grid Spotlight & Color Shifter (Strictly Background Layer) */
+.grid-interactive-reactive {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, var(--grid-glow-color, rgba(255, 213, 0, 0.45)) 1.2px, transparent 1.2px),
+    linear-gradient(to bottom, var(--grid-glow-color, rgba(255, 213, 0, 0.45)) 1.2px, transparent 1.2px);
+  mask-image: radial-gradient(450px circle at var(--cursor-x, -500px) var(--cursor-y, -500px), black 25%, transparent 100%);
+  -webkit-mask-image: radial-gradient(450px circle at var(--cursor-x, -500px) var(--cursor-y, -500px), black 25%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Cursor Ambient Radial Aura (Strictly Background Layer) */
+.grid-ambient-aura {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(620px circle at var(--cursor-x, -500px) var(--cursor-y, -500px), var(--aura-color, rgba(255, 213, 0, 0.08)), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 /* Subtle Grain */
 .bg-noise {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.022'/%3E%3C/svg%3E");
@@ -116,9 +143,17 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-/* Card Bottom Rim-Light */
+/* Card Bottom Rim-Light & Solid Opaque Layer */
 .card-rim-glow {
   position: relative;
+  z-index: 2;
+  background-color: #101015;
+}
+
+.tech-card {
+  position: relative;
+  z-index: 2;
+  background-color: #14141a;
 }
 
 .card-rim-glow::before {
@@ -261,5 +296,92 @@ html.lenis, html.lenis body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
 }
+
+/* ==========================================================================
+   Project Ecosystem / Directory & Filter Tabs
+   ========================================================================== */
+.archive-filter-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a1a1aa;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.archive-filter-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.archive-filter-btn.active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.26);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-directory-card {
+  background: rgba(14, 14, 18, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.project-directory-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(20, 20, 26, 0.85);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.75);
+}
+
+.project-directory-card.card-hidden {
+  display: none !important;
+}
+
+/* Custom horizontal scrollbar hide */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile App Showcase Previews & Play Store Badges */
+.app-screen-preview {
+  height: 260px;
+  width: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.8);
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.app-screen-preview:hover {
+  transform: scale(1.05) translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.app-store-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.app-store-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
 
 
