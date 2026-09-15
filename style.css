@@ -1,6 +1,6 @@
 /* ==========================================================================
    Aanandi Technosoft - Boutique Engineering Studio
-   Markopolo.ai & Crafted Aesthetics: High Contrast, Grid & Micro-Animations
+   Companion Stylesheet: Grid, Glassmorphism, Marquee & Large Watermark
    ========================================================================== */
 
 /* Lenis Smooth Scroll */
@@ -20,13 +20,13 @@ html.lenis, html.lenis body {
   overflow: hidden;
 }
 
-/* Custom Text Selection */
+/* Custom Selection */
 ::selection {
-  background-color: rgba(216, 254, 145, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
   color: #ffffff;
 }
 
-/* Custom Minimalist Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -44,7 +44,7 @@ html.lenis, html.lenis body {
   background: #3f3f46;
 }
 
-/* Subtle Architectural Grid Pattern (Markopolo.ai style) */
+/* Subtle Architectural Grid Pattern */
 .bg-grid-pattern {
   background-size: 36px 36px;
   background-image: 
@@ -52,13 +52,13 @@ html.lenis, html.lenis body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
 }
 
-/* Radial Vignette Mask for Grid (illuminates center, fades to pure black at edges) */
+/* Radial Vignette Mask */
 .mask-radial-vignette {
   mask-image: radial-gradient(ellipse 70% 50% at 50% 28%, black 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 28%, black 40%, transparent 100%);
 }
 
-/* Subtle Tactile Grain Texture */
+/* Subtle Grain */
 .bg-noise {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.022'/%3E%3C/svg%3E");
 }
@@ -90,7 +90,33 @@ html.lenis, html.lenis body {
   left: 150%;
 }
 
-/* Card Bottom Rim-Light (Markopolo Signature Glow) */
+/* Fogged Aesthetic Translucent Glass App Bar */
+.appbar-fogged-glass {
+  background: linear-gradient(180deg, rgba(14, 14, 19, 0.58) 0%, rgba(8, 8, 11, 0.42) 100%);
+  backdrop-filter: blur(28px) saturate(190%) contrast(105%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%) contrast(105%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.03),
+    0 8px 32px -4px rgba(0, 0, 0, 0.65),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Signature Logo Gold Specular Rim on App Bar */
+.appbar-gold-rim {
+  position: absolute;
+  bottom: -1px;
+  left: 20%;
+  width: 60%;
+  height: 1px;
+  background: radial-gradient(ellipse at center, rgba(255, 213, 0, 0.35) 0%, rgba(255, 255, 255, 0.1) 40%, transparent 80%);
+  pointer-events: none;
+}
+
+/* Card Bottom Rim-Light */
 .card-rim-glow {
   position: relative;
 }
@@ -102,7 +128,7 @@ html.lenis, html.lenis body {
   left: 10%;
   width: 80%;
   height: 1px;
-  background: radial-gradient(circle, rgba(216, 254, 145, 0.45) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
   opacity: 0;
   transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
@@ -113,7 +139,7 @@ html.lenis, html.lenis body {
   opacity: 1;
 }
 
-/* Seamless Infinite Marquee Ticker */
+/* Seamless Infinite Marquee */
 @keyframes marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
@@ -129,13 +155,111 @@ html.lenis, html.lenis body {
   animation-play-state: paused;
 }
 
-/* Horizontal Fade Gradient for Marquee Container */
+/* Tech Stack Faster Marquee */
+.animate-tech-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-tech-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Fade Mask for Marquee Containers */
 .marquee-mask {
   mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
 
-/* Popular Card Electric Glow (Markopolo Chartreuse) */
+/* Popular Card Glow */
 .glow-popular {
-  box-shadow: 0 0 30px -4px rgba(216, 254, 145, 0.28), 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 30px -4px rgba(255, 255, 255, 0.15), 0 1px 3px rgba(0, 0, 0, 0.4);
 }
+
+/* Laravel-Style Giant Footer Watermark */
+.footer-watermark {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: clamp(4.5rem, 18vw, 17rem);
+  line-height: 0.82;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.008) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Half-Blurred Glass Overlay for Project Showcase Cards */
+.project-card-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: linear-gradient(180deg, rgba(16, 16, 21, 0.68) 0%, rgba(7, 7, 9, 0.95) 100%);
+}
+
+/* Quick Action Glow Animation (Clean White Ambient Aura) */
+@keyframes quickPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25), 0 4px 18px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0), 0 6px 24px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Premium Primary Quick Action Button */
+.btn-primary-action {
+  background: #ffffff;
+  color: #070709;
+  animation: quickPulse 3.5s infinite ease-in-out;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-action:hover {
+  background: #ffffff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.35), 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary-action:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Premium Secondary Quick Action Button (Frosted Glass) */
+.btn-secondary-action {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #e4e4e7;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary-action:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-secondary-action:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Mobile Nav Drawer Frosted Glass */
+.mobile-nav-glass {
+  background: rgba(11, 11, 14, 0.88);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+

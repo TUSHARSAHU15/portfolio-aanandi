@@ -117,56 +117,54 @@ document.addEventListener('DOMContentLoaded', () => {
       );
     });
 
-    // 3. Animated Number Counter for Stats Strip
-    const statYears = document.getElementById('stat-years');
-    const statDownloads = document.getElementById('stat-downloads');
-    const statRevenue = document.getElementById('stat-revenue');
-    const statIp = document.getElementById('stat-ip');
+    // 3. Animated Number Counter for Stats Strip (Fires immediately on Page Load)
+    function startCounters() {
+      const statYears = document.getElementById('stat-years');
+      const statDownloads = document.getElementById('stat-downloads');
+      const statRevenue = document.getElementById('stat-revenue');
+      const statIp = document.getElementById('stat-ip');
 
-    if (statYears && statDownloads && statRevenue && statIp) {
-      ScrollTrigger.create({
-        trigger: '#track-record',
-        start: 'top 85%',
-        once: true,
-        onEnter: () => {
-          // Years Counter
-          const yearsObj = { val: 0 };
-          gsap.to(yearsObj, {
-            val: 12,
-            duration: 1.6,
-            ease: 'power2.out',
-            onUpdate: () => { statYears.textContent = Math.floor(yearsObj.val) + '+'; }
-          });
+      if (statYears && statDownloads && statRevenue && statIp && typeof gsap !== 'undefined') {
+        // Years Counter (0 -> 12+)
+        const yearsObj = { val: 0 };
+        gsap.to(yearsObj, {
+          val: 12,
+          duration: 1.8,
+          ease: 'power3.out',
+          onUpdate: () => { statYears.innerHTML = Math.floor(yearsObj.val) + '<span class="text-[#FFD500] font-normal">+</span>'; }
+        });
 
-          // Downloads Counter
-          const downObj = { val: 0 };
-          gsap.to(downObj, {
-            val: 3,
-            duration: 1.8,
-            ease: 'power2.out',
-            onUpdate: () => { statDownloads.textContent = Math.floor(downObj.val) + 'M+'; }
-          });
+        // Downloads Counter (0 -> 3M+)
+        const downObj = { val: 0 };
+        gsap.to(downObj, {
+          val: 3,
+          duration: 2.0,
+          ease: 'power3.out',
+          onUpdate: () => { statDownloads.innerHTML = Math.floor(downObj.val) + '<span class="text-[#FFD500] font-normal">M+</span>'; }
+        });
 
-          // Revenue Counter
-          const revObj = { val: 0 };
-          gsap.to(revObj, {
-            val: 1,
-            duration: 1.5,
-            ease: 'power2.out',
-            onUpdate: () => { statRevenue.textContent = '$' + Math.floor(revObj.val) + 'B+'; }
-          });
+        // Revenue Counter (0 -> $1B+)
+        const revObj = { val: 0 };
+        gsap.to(revObj, {
+          val: 1,
+          duration: 1.6,
+          ease: 'power3.out',
+          onUpdate: () => { statRevenue.innerHTML = '<span class="text-[#FFD500] font-normal">$</span>' + Math.floor(revObj.val) + '<span class="text-[#FFD500] font-normal">B+</span>'; }
+        });
 
-          // IP Ownership Counter
-          const ipObj = { val: 0 };
-          gsap.to(ipObj, {
-            val: 100,
-            duration: 2,
-            ease: 'power2.out',
-            onUpdate: () => { statIp.textContent = Math.floor(ipObj.val) + '%'; }
-          });
-        }
-      });
+        // IP Ownership Counter (0 -> 100%)
+        const ipObj = { val: 0 };
+        gsap.to(ipObj, {
+          val: 100,
+          duration: 2.2,
+          ease: 'power3.out',
+          onUpdate: () => { statIp.innerHTML = Math.floor(ipObj.val) + '<span class="text-[#FFD500] font-normal">%</span>'; }
+        });
+      }
     }
+
+    // Trigger on page load with slight delay for smooth visual appearance
+    setTimeout(startCounters, 250);
   }
 
   // 4. Product Spec Modal Handling
@@ -200,9 +198,10 @@ document.addEventListener('DOMContentLoaded', () => {
     data.capabilities.forEach((cap) => {
       const li = document.createElement('li');
       li.className = 'flex items-start gap-2 text-sm text-zinc-300';
-      li.innerHTML = `<span class="text-white mt-1">✦</span><span>${cap}</span>`;
+      li.innerHTML = `<span class="text-[#FFD500] mt-1">✦</span><span>${cap}</span>`;
       capContainer.appendChild(li);
     });
+
 
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
@@ -255,6 +254,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 5. Mobile Navigation Drawer Toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+
   // Smooth anchor scrolling
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener('click', function (e) {
@@ -272,3 +285,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
