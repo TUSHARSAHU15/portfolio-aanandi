@@ -720,27 +720,23 @@ document.addEventListener('DOMContentLoaded', () => {
       // Read form data for custom WhatsApp fallback & telemetry
       const name = document.getElementById('contactName')?.value.trim() || 'Client';
       const email = document.getElementById('contactEmail')?.value.trim() || '';
-      const serviceSelect = document.getElementById('contactService');
-      const serviceText = serviceSelect?.options[serviceSelect.selectedIndex]?.text || 'Software Project';
-      const budgetSelect = document.getElementById('contactBudget');
-      const budgetText = budgetSelect?.options[budgetSelect.selectedIndex]?.text || 'Flexible';
+      const phone = document.getElementById('contactPhone')?.value.trim() || '';
       const message = document.getElementById('contactMessage')?.value.trim() || '';
 
       // Set Loading State
       if (contactSubmitBtn) contactSubmitBtn.disabled = true;
-      if (contactSubmitText) contactSubmitText.textContent = 'Submitting Brief...';
+      if (contactSubmitText) contactSubmitText.textContent = 'Sending...';
       if (contactSubmitSpinner) contactSubmitSpinner.classList.remove('hidden');
       if (contactSubmitArrow) contactSubmitArrow.classList.add('hidden');
 
       // Prepare custom WhatsApp message for instant follow-up
       if (contactSuccessWhatsAppLink) {
         const waText = encodeURIComponent(
-          `Hello Aanandi TechnoSoft,\n\nI just submitted a project brief on your website.\n\n` +
-          `• Name: ${name}\n` +
-          `• Email: ${email}\n` +
-          `• Project Type: ${serviceText}\n` +
-          `• Budget: ${budgetText}\n\n` +
-          `Brief: ${message.substring(0, 160)}${message.length > 160 ? '...' : ''}`
+          `Hello Aanandi TechnoSoft,\n\n` +
+          `Name: ${name}\n` +
+          `Email: ${email}\n` +
+          (phone ? `Phone: ${phone}\n` : '') +
+          `Message: ${message}`
         );
         contactSuccessWhatsAppLink.href = `https://wa.me/919713846846?text=${waText}`;
       }
@@ -749,7 +745,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         // Reset submit button state
         if (contactSubmitBtn) contactSubmitBtn.disabled = false;
-        if (contactSubmitText) contactSubmitText.textContent = 'Send Project Brief';
+        if (contactSubmitText) contactSubmitText.textContent = 'Send Message';
         if (contactSubmitSpinner) contactSubmitSpinner.classList.add('hidden');
         if (contactSubmitArrow) contactSubmitArrow.classList.remove('hidden');
 
