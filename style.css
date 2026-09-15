@@ -1,9 +1,9 @@
 /* ==========================================================================
    Aanandi Technosoft - Boutique Engineering Studio
-   Exact Reference Design Companion Stylesheet
+   Aesthetic Backgrounds, Micro-Animations & Readability Helpers
    ========================================================================== */
 
-/* Lenis Smooth Scroll Recommended */
+/* Lenis Smooth Scroll */
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -22,17 +22,17 @@ html.lenis, html.lenis body {
 
 /* Custom Text Selection */
 ::selection {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.25);
   color: #ffffff;
 }
 
-/* Custom Scrollbar */
+/* Custom Minimalist Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #08080a;
+  background: #070709;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,12 +44,65 @@ html.lenis, html.lenis body {
   background: #3f3f46;
 }
 
-/* Subtle Grain */
-.bg-noise {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.025'/%3E%3C/svg%3E");
+/* Subtle Engineering Grid Background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
 }
 
-/* Button Hover Shimmer */
+/* Radial Vignette Mask for Grid (fades grid smoothly towards edges) */
+.mask-radial-vignette {
+  mask-image: radial-gradient(circle at 50% 20%, black 30%, rgba(0, 0, 0, 0.2) 75%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at 50% 20%, black 30%, rgba(0, 0, 0, 0.2) 75%, transparent 100%);
+}
+
+/* Subtle Film Grain */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Interactive Spotlight Card (Mouse tracking radial border highlight) */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    500px circle at var(--mouse-x, -1000px) var(--mouse-y, -1000px),
+    rgba(255, 255, 255, 0.22),
+    transparent 45%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Button Shimmer */
 .btn-shimmer {
   position: relative;
   overflow: hidden;
@@ -65,7 +118,7 @@ html.lenis, html.lenis body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.3),
     transparent
   );
   transform: skewX(-20deg);
@@ -74,4 +127,18 @@ html.lenis, html.lenis body {
 
 .btn-shimmer:hover::after {
   left: 150%;
+}
+
+/* Animated Shimmer Outline on Featured Card */
+@keyframes borderGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px -5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px 2px rgba(255, 255, 255, 0.35);
+  }
+}
+
+.glow-card-featured {
+  animation: borderGlow 4s ease-in-out infinite;
 }
