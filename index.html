@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aanandi Technosoft · Custom Software, Mobile Apps & Web Platforms</title>
+  <title>Aanandi Technosoft · Custom Software & Product Engineering</title>
 
   <!-- SEO & Social Meta -->
-  <meta name="description" content="We build custom software, mobile apps, and web platforms for ambitious founders and growing businesses. 12+ years of production delivery. 100% code ownership.">
+  <meta name="description" content="We engineer custom software that businesses actually ship. Bespoke web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aanandi Technosoft · Custom Software & Product Engineering">
-  <meta property="og:description" content="We engineer custom software that businesses actually ship. Mobile apps, web platforms, and business automation.">
+  <meta property="og:description" content="We engineer custom software that businesses actually ship. Bespoke web platforms, native mobile apps, and vertical CRMs.">
   <meta property="og:image" content="images/hospital-crm-showcase.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS via CDN with Exact Design Tokens -->
+  <!-- Tailwind CSS via CDN with Markopolo & Reference Tokens -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -31,7 +31,8 @@
             card: '#101015',
             surface: '#14141a',
             subtle: '#d4d4d8',
-            muted: '#a1a1aa'
+            muted: '#a1a1aa',
+            neon: '#d8fe91'
           },
           fontFamily: {
             serif: ['Newsreader', 'Georgia', 'serif'],
@@ -54,11 +55,11 @@
 </head>
 <body class="bg-void text-white font-sans antialiased selection:bg-white/20 selection:text-white bg-noise min-h-screen relative overflow-x-hidden">
 
-  <!-- Subtle Engineering Grid Background with Radial Vignette -->
+  <!-- Architectural Engineering Grid Pattern with Center Vignette (Markopolo.ai Style) -->
   <div class="fixed inset-0 bg-grid-pattern mask-radial-vignette pointer-events-none -z-10"></div>
   
   <!-- Subtle Ambient Glows -->
-  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-b from-indigo-500/[0.04] via-violet-500/[0.02] to-transparent blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-gradient-to-b from-lime-500/[0.04] via-emerald-500/[0.02] to-transparent blur-[140px] pointer-events-none -z-10"></div>
   <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-emerald-500/[0.02] blur-[160px] pointer-events-none -z-10"></div>
 
   <!-- =========================================================================
@@ -72,39 +73,32 @@
         <div class="w-7 h-7 rounded bg-white text-zinc-950 flex items-center justify-center font-bold text-xs tracking-tight transition-transform group-hover:scale-105">
           A
         </div>
-        <div class="flex flex-col">
-          <span class="text-sm font-semibold tracking-tight text-white group-hover:text-zinc-200 transition-colors">
-            Aanandi Technosoft
-          </span>
-          <span class="text-[10px] font-mono text-zinc-400">Software & Product Studio</span>
-        </div>
+        <span class="text-sm font-semibold tracking-tight text-white group-hover:text-zinc-200 transition-colors">
+          Aanandi Technosoft
+        </span>
       </a>
 
       <!-- Center Nav Links -->
-      <nav class="hidden md:flex items-center gap-8 text-xs font-mono tracking-[0.16em] uppercase text-zinc-300">
-        <a href="#what-we-build" class="hover:text-white transition-colors">What We Build</a>
-        <a href="#products" class="hover:text-white transition-colors">Products & IP</a>
-        <a href="#process" class="hover:text-white transition-colors">How We Work</a>
-        <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+      <nav class="hidden md:flex items-center gap-8 text-[11px] font-mono tracking-[0.18em] uppercase text-zinc-300">
+        <a href="#track-record" class="hover:text-white transition-colors">Track Record</a>
+        <a href="#engineering" class="hover:text-white transition-colors">Engineering</a>
+        <a href="#products" class="hover:text-white transition-colors">IP & Products</a>
+        <a href="#process" class="hover:text-white transition-colors">Process</a>
       </nav>
 
       <!-- Right Action & Availability Beacon -->
-      <div class="flex items-center gap-3 sm:gap-4">
-        <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+      <div class="flex items-center gap-3">
+        <!-- Live Status Pill (Markopolo style beacon) -->
+        <div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/50 border border-emerald-500/25 text-emerald-400 text-[11px] font-mono">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          <span>Taking New Projects</span>
+          <span>Taking Q3/Q4 Sprints</span>
         </div>
 
-        <a href="https://wa.me/919713846846" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/15 text-xs text-zinc-300 hover:text-white hover:border-white/30 transition-all font-mono">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
-          <span>WhatsApp</span>
-        </a>
-
-        <a href="#contact" class="btn-shimmer bg-white text-zinc-950 hover:bg-zinc-200 font-semibold text-xs px-4 py-2 rounded-full tracking-tight transition-all shadow-sm">
-          Talk to an Engineer
+        <a href="#contact" class="btn-shimmer bg-white text-zinc-950 hover:bg-zinc-200 font-semibold text-xs px-4 sm:px-5 py-2 rounded-full tracking-tight transition-all shadow-sm">
+          Discuss Project
         </a>
       </div>
 
@@ -114,51 +108,30 @@
   <main class="max-w-6xl mx-auto px-6">
     
     <!-- =========================================================================
-         2. HERO SECTION (Clear, Non-Distracting, High Trust)
+         2. HERO SECTION
          ========================================================================= -->
     <section class="pt-20 sm:pt-28 pb-16 reveal-fade">
       <div class="max-w-4xl">
-        
-        <!-- Target Badge -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono text-zinc-300 mb-6">
-          <span class="text-amber-400">✦</span> FOR STARTUPS & GROWING BUSINESSES · 100% CODE OWNERSHIP
-        </div>
-
         <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[76px] font-normal text-white leading-[1.06] tracking-tight mb-6">
-          We build custom software<br>
-          and mobile apps that businesses<br>
+          We engineer custom<br>
+          software that businesses<br>
           <span class="italic font-normal text-zinc-200">actually ship.</span>
         </h1>
 
-        <p class="text-base sm:text-xl text-zinc-300 max-w-2xl font-sans leading-relaxed mb-8">
-          Have an idea for a mobile app, web platform, or need custom software to automate your business? We handle 100% of the design, coding, testing, and cloud launch. No technical knowledge required from you.
+        <!-- Elevated Contrast Body Copy -->
+        <p class="text-base sm:text-lg text-zinc-300 max-w-2xl font-sans leading-relaxed mb-8">
+          Bespoke web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.
         </p>
 
-        <!-- CTAs: Obvious & Accessible for both 20yo founders and 40yo executives -->
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
-          <a href="#contact" class="btn-shimmer px-7 py-3.5 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 font-bold text-sm tracking-tight transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-white/10">
-            <span>Start Your Project (Free Consultation)</span>
+        <div class="flex items-center gap-4">
+          <a href="#contact" class="btn-shimmer px-6 sm:px-7 py-3 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 font-bold text-sm tracking-tight transition-all flex items-center gap-1.5 shadow-lg shadow-white/5 hover:scale-[1.02]">
+            <span>Start a sprint</span>
             <span>→</span>
           </a>
-          <a href="https://wa.me/919713846846" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full bg-card hover:bg-surface text-zinc-200 hover:text-white border border-white/15 hover:border-white/30 font-medium text-sm tracking-tight transition-all flex items-center justify-center gap-2">
-            <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400"></i>
-            <span>Call / WhatsApp: +91 9713 846 846</span>
+          <a href="#products" class="px-6 py-3 rounded-full bg-card/60 text-zinc-200 hover:text-white border border-white/15 hover:border-white/30 font-medium text-sm tracking-tight transition-all hover:bg-surface">
+            Explore IP
           </a>
         </div>
-
-        <!-- Reassurance Guarantees -->
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono text-zinc-400 pt-4 border-t border-white/[0.06]">
-          <div class="flex items-center gap-1.5">
-            <span class="text-emerald-400">✓</span> <span>Strict NDA Signed Before Kickoff</span>
-          </div>
-          <div class="flex items-center gap-1.5">
-            <span class="text-emerald-400">✓</span> <span>Weekly Working Demos You Can Test</span>
-          </div>
-          <div class="flex items-center gap-1.5">
-            <span class="text-emerald-400">✓</span> <span>100% Full Code & Database Handover</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -170,127 +143,133 @@
         
         <div class="p-6 sm:p-8 flex flex-col justify-center">
           <div id="stat-years" class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">12+</div>
-          <div class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">Years of Experience</div>
+          <div class="text-[11px] font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">Years of Engineering</div>
         </div>
 
         <div class="p-6 sm:p-8 flex flex-col justify-center">
           <div id="stat-downloads" class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">3M+</div>
-          <div class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">Downloads Delivered</div>
+          <div class="text-[11px] font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">Downloads Delivered</div>
         </div>
 
         <div class="p-6 sm:p-8 flex flex-col justify-center">
           <div id="stat-revenue" class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">$1B+</div>
-          <div class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">Transactions Powered</div>
+          <div class="text-[11px] font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">Revenue Powered</div>
         </div>
 
         <div class="p-6 sm:p-8 flex flex-col justify-center">
           <div id="stat-ip" class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">100%</div>
-          <div class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">IP Owned By You</div>
+          <div class="text-[11px] font-mono text-zinc-400 uppercase tracking-[0.16em] mt-1 font-medium">IP Ownership</div>
         </div>
 
       </div>
     </section>
 
     <!-- =========================================================================
-         4. TRUST TICKER
+         4. TRUST TICKER (Smooth Infinite Marquee)
          ========================================================================= -->
     <section class="pb-24 border-b border-white/[0.08] text-center reveal-fade">
-      <div class="text-xs font-mono text-zinc-400 tracking-[0.25em] uppercase mb-8 font-medium">
-        Trusted by Enterprise Clients & Startup Founders
+      <div class="text-xs font-mono text-zinc-400 tracking-[0.22em] uppercase mb-6 font-medium">
+        ✦ Trusted by Global Leaders
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16 text-xs sm:text-sm font-mono text-zinc-300 tracking-[0.16em] uppercase">
-        <span class="hover:text-white transition-colors">US Title & Escrow</span>
-        <span class="hover:text-white transition-colors">Healthcare Clinics</span>
-        <span class="hover:text-white transition-colors">DermaUI24</span>
-        <span class="hover:text-white transition-colors">Prime Laundry</span>
-        <span class="hover:text-white transition-colors">Tourbix</span>
+      
+      <!-- Infinite Marquee Loop with Fade Mask -->
+      <div class="overflow-hidden marquee-mask py-3">
+        <div class="animate-marquee items-center gap-10 sm:gap-14 text-xs sm:text-sm font-mono text-zinc-300 tracking-[0.16em] uppercase">
+          <span>US Title & Escrow</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>Healthcare Clinics</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>DermaUI24</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>Prime Laundry</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>Tourbix</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <!-- Duplicate elements for seamless endless loop -->
+          <span>US Title & Escrow</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>Healthcare Clinics</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>DermaUI24</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>Prime Laundry</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+          <span>Tourbix</span>
+          <span class="text-zinc-600 text-[10px]">✦</span>
+        </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         5. WHAT WE BUILD (Clear, Direct, Zero Tech Jargon)
+         5. ENGINEERING & IP
          ========================================================================= -->
-    <section id="what-we-build" class="py-24 border-b border-white/[0.08] reveal-fade">
+    <section id="engineering" class="py-24 border-b border-white/[0.08] reveal-fade">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.2em] block mb-2 font-medium">✦ CORE SERVICES</span>
           <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight">
-            What We Build For You.
+            Engineering & IP.
           </h2>
           <p class="text-base text-zinc-300 mt-2 max-w-xl font-sans leading-relaxed">
-            Whether you are launching a brand-new tech product or digitizing a traditional company, we engineer the complete solution from day one.
+            Modern, production-grade technologies we actively staff — paired with battle-tested software modules ready to customize.
           </p>
         </div>
         <a href="#contact" class="text-xs font-mono text-zinc-300 hover:text-white transition-colors flex items-center gap-1.5 whitespace-nowrap">
-          <span>Consult on your project</span>
+          <span>Consult on feasibility</span>
           <span>→</span>
         </a>
       </div>
 
-      <!-- 4 Core Capability Cards -->
+      <!-- 4 Capability Cards with Hover Rim Glow -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- 1. Mobile Apps -->
-        <div class="spotlight-card p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 flex flex-col justify-between">
+        <div class="card-rim-glow p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5">
-              <i data-lucide="smartphone" class="w-5 h-5"></i>
+            <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-200 mb-6">
+              <i data-lucide="layout" class="w-4 h-4"></i>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">Mobile Apps (iOS & Android)</h3>
-            <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-4">
-              Consumer apps, on-demand booking, e-commerce, and delivery tracking published to Apple App Store & Google Play.
+            <h3 class="text-base font-semibold text-white mb-2">Frontend & Web</h3>
+            <p class="text-xs text-zinc-300 leading-relaxed font-mono">
+              React, Next.js, TypeScript.<br>
+              High-performance SPAs and SSR portals.
             </p>
-          </div>
-          <div class="text-xs font-mono text-zinc-400 pt-3 border-t border-white/[0.06]">
-            Built with Flutter & React Native
           </div>
         </div>
 
-        <!-- 2. Web Platforms & SaaS -->
-        <div class="spotlight-card p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 flex flex-col justify-between">
+        <div class="card-rim-glow p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-5">
-              <i data-lucide="layout" class="w-5 h-5"></i>
+            <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-200 mb-6">
+              <i data-lucide="server" class="w-4 h-4"></i>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">Web Software & SaaS</h3>
-            <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-4">
-              Subscription platforms, client portals, billing dashboards, and responsive web applications with sub-second speeds.
+            <h3 class="text-base font-semibold text-white mb-2">Backend & Cloud</h3>
+            <p class="text-xs text-zinc-300 leading-relaxed font-mono">
+              Laravel, Node.js, PostgreSQL.<br>
+              High-throughput microservices.
             </p>
-          </div>
-          <div class="text-xs font-mono text-zinc-400 pt-3 border-t border-white/[0.06]">
-            Built with React, Next.js & Node
           </div>
         </div>
 
-        <!-- 3. Business CRMs & Automation -->
-        <div class="spotlight-card p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 flex flex-col justify-between">
+        <div class="card-rim-glow p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-5">
-              <i data-lucide="server" class="w-5 h-5"></i>
+            <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-200 mb-6">
+              <i data-lucide="smartphone" class="w-4 h-4"></i>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">Custom Business ERP & CRM</h3>
-            <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-4">
-              Replace messy Excel sheets and paper logs with custom software tailored to your company's exact operational flow.
+            <h3 class="text-base font-semibold text-white mb-2">Mobile Apps</h3>
+            <p class="text-xs text-zinc-300 leading-relaxed font-mono">
+              Flutter & React Native.<br>
+              Deployed to Play Store and App Store.
             </p>
-          </div>
-          <div class="text-xs font-mono text-zinc-400 pt-3 border-t border-white/[0.06]">
-            PostgreSQL, Laravel & Cloud DBs
           </div>
         </div>
 
-        <!-- 4. AI & Smart Automation -->
-        <div class="spotlight-card p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 flex flex-col justify-between">
+        <div class="card-rim-glow p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-5">
-              <i data-lucide="cpu" class="w-5 h-5"></i>
+            <div class="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-200 mb-6">
+              <i data-lucide="cpu" class="w-4 h-4"></i>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">AI & WhatsApp Automation</h3>
-            <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-4">
-              24/7 WhatsApp auto-responders that capture leads, answer questions, and notify your sales team instantly.
+            <h3 class="text-base font-semibold text-white mb-2">AI & Automation</h3>
+            <p class="text-xs text-zinc-300 leading-relaxed font-mono">
+              Meta API, LLM Agents, RAG knowledge bases, and computer vision.
             </p>
-          </div>
-          <div class="text-xs font-mono text-zinc-400 pt-3 border-t border-white/[0.06]">
-            Meta API, OpenAI & LangChain
           </div>
         </div>
 
@@ -298,16 +277,15 @@
     </section>
 
     <!-- =========================================================================
-         6. BATTLE-TESTED PRODUCTS & READY MODULES
+         6. BATTLE-TESTED PRODUCTS (2x2 Grid with Card Rim Glow)
          ========================================================================= -->
     <section id="products" class="py-24 border-b border-white/[0.08] reveal-fade">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.2em] block mb-2 font-medium">✦ PROVEN TRACK RECORD</span>
-        <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight mb-3">
-          Battle-Tested Software We’ve Shipped.
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight mb-2">
+          Battle-Tested.
         </h2>
         <p class="text-base text-zinc-300 font-sans">
-          These products are running in production right now. We can customize any of these platforms for your business or engineer a completely new product from scratch.
+          Proprietary products available for immediate deployment or custom extension.
         </p>
       </div>
 
@@ -315,88 +293,88 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Product 1: Ayurvedic CRM -->
-        <div class="spotlight-card rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 overflow-hidden group flex flex-col">
+        <div class="card-rim-glow rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/25 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col shadow-lg">
           <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.08]">
             <img src="images/hospital-crm-showcase.jpg" alt="Ayurvedic CRM" class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500 ease-out">
           </div>
           <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
             <div>
               <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-                HEALTHCARE • PRODUCTION LIVE
+                HEALTHCARE • PRODUCTION
               </span>
-              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">Hospital & Clinic CRM</h3>
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">Ayurvedic CRM</h3>
               <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-6">
-                Mobile and web system for patient appointments, doctor OPD token display, bed management, and automated pharmacy billing.
+                OPD, IPD, therapy packages, and pharmacy billing shipped as a mobile-first product for Ayurvedic clinics.
               </p>
             </div>
-            <button class="product-spec-trigger text-left text-xs font-mono text-white hover:text-zinc-300 uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1 transition-transform font-semibold" data-product="ayurvedic-crm">
-              <span>VIEW ARCHITECTURE SPEC</span>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1.5 transition-transform font-semibold" data-product="ayurvedic-crm">
+              <span>PRODUCT SPEC</span>
               <span>&gt;</span>
             </button>
           </div>
         </div>
 
         <!-- Product 2: WhatsApp WAPI -->
-        <div class="spotlight-card rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 overflow-hidden group flex flex-col">
+        <div class="card-rim-glow rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/25 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col shadow-lg">
           <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.08]">
             <img src="images/ai-saas-showcase.jpg" alt="WhatsApp WAPI" class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500 ease-out">
           </div>
           <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
             <div>
               <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-                AI AUTOMATION • 2.4M EVENTS/MO
+                AI SAAS • META API
               </span>
-              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">WhatsApp AI Agent (WAPI)</h3>
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">WhatsApp WAPI</h3>
               <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-6">
-                24/7 automated customer lead capture across WhatsApp, Instagram, and Web. Answers pricing questions and alerts sales reps for high-value leads.
+                AI first-response on WhatsApp and Meta socials to capture leads after hours with seamless human handoff.
               </p>
             </div>
-            <button class="product-spec-trigger text-left text-xs font-mono text-white hover:text-zinc-300 uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1 transition-transform font-semibold" data-product="whatsapp-wapi">
-              <span>VIEW ARCHITECTURE SPEC</span>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1.5 transition-transform font-semibold" data-product="whatsapp-wapi">
+              <span>PRODUCT SPEC</span>
               <span>&gt;</span>
             </button>
           </div>
         </div>
 
         <!-- Product 3: AI Bulk Mailer -->
-        <div class="spotlight-card rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 overflow-hidden group flex flex-col">
+        <div class="card-rim-glow rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/25 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col shadow-lg">
           <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.08]">
             <img src="images/bulk-mailer-showcase.jpg" alt="AI Bulk Mailer" class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500 ease-out">
           </div>
           <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
             <div>
               <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-                SALES & GROWTH • EMAIL ENGINE
+                GROWTH • EMAIL PRODUCTION
               </span>
-              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">AI Bulk Mailer Platform</h3>
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">AI Bulk Mailer</h3>
               <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-6">
-                High-deliverability campaign software with AI-assisted copywriting, inbox warmup, and automated customer follow-up sequences.
+                AI-assisted campaigns: write, segment, send and track bulk email without a separate copy team.
               </p>
             </div>
-            <button class="product-spec-trigger text-left text-xs font-mono text-white hover:text-zinc-300 uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1 transition-transform font-semibold" data-product="bulk-mailer">
-              <span>VIEW ARCHITECTURE SPEC</span>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1.5 transition-transform font-semibold" data-product="bulk-mailer">
+              <span>PRODUCT SPEC</span>
               <span>&gt;</span>
             </button>
           </div>
         </div>
 
         <!-- Product 4: Tiffin SaaS -->
-        <div class="spotlight-card rounded-2xl bg-card border border-white/[0.08] hover:border-white/25 overflow-hidden group flex flex-col">
+        <div class="card-rim-glow rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/25 hover:-translate-y-1.5 transition-all duration-300 group flex flex-col shadow-lg">
           <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.08]">
             <img src="images/tiffin-saas-showcase.jpg" alt="Tiffin SaaS" class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500 ease-out">
           </div>
           <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
             <div>
               <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-                FOOD & RETAIL • MULTI-TENANT
+                F&B • MULTI-TENANT
               </span>
-              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">Tiffin & Cloud Kitchen SaaS</h3>
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-zinc-200 transition-colors">Tiffin SaaS</h3>
               <p class="text-sm text-zinc-300 leading-relaxed font-sans mb-6">
-                Mobile app for customer meal subscriptions and cloud-kitchen operator console with automated delivery route dispatch.
+                SaaS for tiffin and cloud-kitchen operators: menus, subscriptions, delivery slots and operator consoles.
               </p>
             </div>
-            <button class="product-spec-trigger text-left text-xs font-mono text-white hover:text-zinc-300 uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1 transition-transform font-semibold" data-product="tiffin-saas">
-              <span>VIEW ARCHITECTURE SPEC</span>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.16em] flex items-center gap-1 group-hover:translate-x-1.5 transition-transform font-semibold" data-product="tiffin-saas">
+              <span>PRODUCT SPEC</span>
               <span>&gt;</span>
             </button>
           </div>
@@ -406,79 +384,75 @@
     </section>
 
     <!-- =========================================================================
-         7. HOW WE WORK (Step-by-Step, Reassuring for Non-Tech & Tech Alike)
+         7. THE SPRINTS (6 Steps Grid)
          ========================================================================= -->
     <section id="process" class="py-24 border-b border-white/[0.08] reveal-fade">
       <div class="mb-14">
-        <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.2em] block mb-2 font-medium">✦ SIMPLE 6-STEP DELIVERY</span>
         <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight">
-          How We Build Your Software.
+          <span class="italic font-normal">The</span> Sprints.
         </h2>
-        <p class="text-base text-zinc-300 mt-2 max-w-xl font-sans leading-relaxed">
-          From first phone call to public store launch, our process is clear, transparent, and predictable.
-        </p>
       </div>
 
-      <!-- 6-step 3x2 Grid -->
+      <!-- 6-step 3x2 Grid with Hover Lift -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-            01 / FIRST STEP
+            01 / DISCOVERY
           </span>
-          <h3 class="text-xl font-bold text-white mb-2">Free Discovery Call</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Qualified Lead</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            We get on a 30-min call or WhatsApp chat. You explain what you need, your goals, and your timeline. Zero tech jargon.
+            Inbound call, form or referral. We acknowledge the same business day and book a discovery slot.
           </p>
         </div>
 
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-            02 / TRANSPARENCY
+            02 / STRATEGY
           </span>
-          <h3 class="text-xl font-bold text-white mb-2">Fixed Blueprint & Cost</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Discovery Call</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            We send a crystal-clear proposal detailing exact features, fixed pricing, and launch dates before you pay a single rupee.
+            Goals, users, constraints, integrations. We decide fit against ideal-project and exclusion criteria.
           </p>
         </div>
 
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-            03 / PROTECTION
+            03 / FEASIBILITY
           </span>
-          <h3 class="text-xl font-bold text-white mb-2">NDA & IP Agreement</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Technical Audit</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            We sign a mutual Non-Disclosure Agreement. Your business idea, customer data, and source code are 100% your legal property.
+            Engineering lead validates stack, risks and estimate drivers. No proposal without this sign-off.
           </p>
         </div>
 
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-            04 / VELOCITY
+            04 / COMMERCIALS
           </span>
-          <h3 class="text-xl font-bold text-white mb-2">2-Week Sprint Builds</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Scoped Proposal</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            Our senior developers write clean, typed code. Every 7–14 days, you get a working test version on your phone or computer.
+            Commercial owner prices the engagement. Proposal goes out after technical + commercial approval.
           </p>
         </div>
 
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-            05 / TESTING
+            05 / EXECUTION
           </span>
-          <h3 class="text-xl font-bold text-white mb-2">Rigorous QA & Security</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Build in Sprints</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            We stress test across all Android, iPhone, and desktop browsers to guarantee 99.9% crash-free performance before launch.
+            Design → agile development → QA. You see working, production-ready software every single iteration.
           </p>
         </div>
 
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.16em] block mb-2 font-medium">
-            06 / HANDOVER
+            06 / DEPLOYMENT
           </span>
-          <h3 class="text-xl font-bold text-white mb-2">Launch & 30-Day Care</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Launch & Retain</h3>
           <p class="text-sm text-zinc-300 leading-relaxed">
-            We deploy to your domain and app stores, hand over all passwords and source code, and provide 30 days of free support.
+            CI/CD deploy, training, monitoring, and a support retainer so the product evolves after go-live.
           </p>
         </div>
 
@@ -486,95 +460,77 @@
     </section>
 
     <!-- =========================================================================
-         8. ENGAGEMENT MODELS (Clear, Transparent Pricing)
+         8. ENGAGEMENT MODELS (3 Cards with Dedicated Squad Glowing Highlight)
          ========================================================================= -->
-    <section id="pricing" class="py-24 border-b border-white/[0.08] reveal-fade">
+    <section class="py-24 border-b border-white/[0.08] reveal-fade">
       <div class="mb-14">
-        <span class="text-xs font-mono text-zinc-400 uppercase tracking-[0.2em] block mb-2 font-medium">✦ COMMERCIALS</span>
         <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight">
-          How You Can Hire Us.
+          Engagement Models.
         </h2>
-        <p class="text-base text-zinc-300 mt-2 max-w-xl font-sans leading-relaxed">
-          Choose the partnership model that best matches your budget and operational timeline.
-        </p>
       </div>
 
       <!-- 3 Engagement Cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
         
         <!-- Card 1: Fixed-Scope MVP -->
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] flex flex-col justify-between">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] flex flex-col justify-between hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <div>
-            <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest block mb-2">FOR NEW PROJECTS</span>
-            <h3 class="text-2xl font-bold text-white mb-2">Fixed-Price MVP</h3>
+            <h3 class="text-xl font-bold text-white mb-2">Fixed-Scope MVP</h3>
             <p class="text-sm text-zinc-300 leading-relaxed mb-6 font-sans">
-              Best for first-time founders or specific software requirements with locked budgets and defined launch dates.
+              Guaranteed milestone delivery with locked budget and defined launch dates.
             </p>
           </div>
-          <div class="space-y-2.5 pt-4 border-t border-white/[0.08] text-xs font-mono text-zinc-200">
+          <div class="space-y-2.5 pt-4 border-t border-white/[0.06] text-xs font-mono text-zinc-200">
             <div class="flex items-center gap-2">
               <span class="text-emerald-400">✓</span>
-              <span>100% Fixed Scope & Timeline</span>
+              <span>Locked scope & budget</span>
             </div>
             <div class="flex items-center gap-2">
               <span class="text-emerald-400">✓</span>
-              <span>Milestone-based payouts</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-emerald-400">✓</span>
-              <span>Full source code handover</span>
+              <span>Milestone payouts</span>
             </div>
           </div>
         </div>
 
-        <!-- Card 2: Dedicated Squad (MOST POPULAR - High Contrast White Card) -->
-        <div class="glow-card-featured p-6 sm:p-8 rounded-2xl bg-white text-zinc-950 shadow-2xl flex flex-col justify-between relative transform md:-translate-y-2 transition-transform hover:-translate-y-3">
+        <!-- Card 2: Dedicated Squad (MOST POPULAR - High Contrast with Electric Lime Badge) -->
+        <div class="glow-popular p-6 sm:p-8 rounded-2xl bg-white text-zinc-950 shadow-2xl flex flex-col justify-between relative transform md:-translate-y-2 hover:-translate-y-3 transition-transform duration-300">
           <div>
-            <span class="inline-block bg-zinc-950 text-white text-[10px] font-mono uppercase px-2.5 py-0.5 rounded tracking-[0.16em] font-semibold mb-3">
-              MOST POPULAR FOR SCALING
+            <span class="inline-block bg-[#070709] text-neon text-[10px] font-mono uppercase px-2.5 py-1 rounded tracking-[0.18em] font-bold mb-3 border border-neon/30">
+              ✦ MOST POPULAR
             </span>
             <h3 class="text-2xl font-bold text-zinc-950 mb-2">Dedicated Squad</h3>
             <p class="text-sm text-zinc-700 leading-relaxed mb-6 font-sans">
-              Your own dedicated team of senior full-stack developers and QA engineers working exclusively on your product.
+              Senior full-stack engineers and QA embedded into your team for high development velocity.
             </p>
           </div>
           <div class="space-y-2.5 pt-4 border-t border-zinc-200 text-xs font-mono text-zinc-900 font-medium">
             <div class="flex items-center gap-2">
               <span class="text-zinc-950 font-bold">⚡</span>
-              <span>Predictable monthly retainer</span>
+              <span>Predictable monthly cost</span>
             </div>
             <div class="flex items-center gap-2">
               <span class="text-zinc-950 font-bold">⚡</span>
-              <span>Daily Slack / WhatsApp communication</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-zinc-950 font-bold">⚡</span>
-              <span>Rapid weekly feature releases</span>
+              <span>Rapid weekly releases</span>
             </div>
           </div>
         </div>
 
         <!-- Card 3: Time & Materials -->
-        <div class="spotlight-card p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] flex flex-col justify-between">
+        <div class="card-rim-glow p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] flex flex-col justify-between hover:border-white/20 hover:-translate-y-1 transition-all duration-300">
           <div>
-            <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest block mb-2">FOR EVOLVING SCOPES</span>
-            <h3 class="text-2xl font-bold text-white mb-2">Time & Materials</h3>
+            <h3 class="text-xl font-bold text-white mb-2">Time & Materials</h3>
             <p class="text-sm text-zinc-300 leading-relaxed mb-6 font-sans">
-              Agile development where your requirements evolve sprint-to-sprint with transparent hourly or weekly billing.
+              Agile iteration where requirements adapt sprint-to-sprint with transparent hourly billing.
             </p>
           </div>
-          <div class="space-y-2.5 pt-4 border-t border-white/[0.08] text-xs font-mono text-zinc-200">
+          <div class="space-y-2.5 pt-4 border-t border-white/[0.06] text-xs font-mono text-zinc-200">
             <div class="flex items-center gap-2">
               <span class="text-emerald-400">✓</span>
-              <span>Start before final specifications</span>
+              <span>Start before final spec</span>
             </div>
             <div class="flex items-center gap-2">
               <span class="text-emerald-400">✓</span>
-              <span>Adapt features sprint-to-sprint</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-emerald-400">✓</span>
-              <span>Detailed timesheet logs</span>
+              <span>Adapt sprint to sprint</span>
             </div>
           </div>
         </div>
@@ -583,69 +539,50 @@
     </section>
 
     <!-- =========================================================================
-         9. CONTACT & FOOTER SECTION (Clear, Accessible, High Trust)
+         9. CONTACT & FOOTER SECTION
          ========================================================================= -->
     <section id="contact" class="py-24 border-b border-white/[0.08] reveal-fade">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16">
         
-        <!-- Left: Statement & Direct Actions -->
+        <!-- Left: Statement & WhatsApp -->
         <div>
-          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[46px] font-normal text-white leading-[1.12] mb-4">
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal text-white leading-[1.12] mb-6">
             A brief today.<br>
             A scoped reply<br>
             <span class="italic font-normal text-zinc-200">this week.</span>
           </h2>
-          <p class="text-sm text-zinc-300 font-sans mb-6">
-            Tell us what you want to build. We reply with feasibility, timeline, and an estimated cost within 24 hours.
-          </p>
-          <div class="space-y-3">
-            <a href="https://wa.me/919713846846" target="_blank" rel="noopener noreferrer" class="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 text-sm font-bold tracking-tight transition-all shadow-lg hover:shadow-white/10">
-              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
-              <span>Chat on WhatsApp (+91 9713 846 846)</span>
-            </a>
-            <div class="text-xs text-zinc-400 font-mono">
-              ⚡ Typical response time: Under 2 hours
-            </div>
-          </div>
+          <a href="https://wa.me/919713846846" target="_blank" rel="noopener noreferrer" class="btn-shimmer inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 text-xs font-semibold tracking-tight transition-all shadow-md hover:scale-[1.02]">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
         </div>
 
         <!-- Middle: Contact Details -->
         <div>
           <div class="text-xs font-mono text-zinc-400 uppercase tracking-[0.2em] mb-4 font-medium">
-            DIRECT CONTACT
+            CONTACT
           </div>
-          <div class="space-y-3 text-sm font-mono text-zinc-200">
-            <div>
-              <span class="text-xs text-zinc-500 block">Email Us:</span>
-              <a href="mailto:info@aanandi.in" class="hover:text-white transition-colors text-base font-semibold">
-                info@aanandi.in
-              </a>
-            </div>
-            <div>
-              <span class="text-xs text-zinc-500 block">Call Directly:</span>
-              <a href="tel:+919713846846" class="hover:text-white transition-colors text-base font-semibold">
-                +91 9713 846 846
-              </a>
-            </div>
-            <div class="pt-2 text-xs text-zinc-400">
-              Operating hours: 9:00 AM – 8:00 PM IST (Mon–Sat)
-            </div>
+          <div class="space-y-2.5 text-sm font-mono text-zinc-200">
+            <a href="mailto:info@aanandi.in" class="hover:text-white transition-colors block">
+              info@aanandi.in
+            </a>
+            <a href="tel:+919713846846" class="hover:text-white transition-colors block">
+              +91 9713 846 846
+            </a>
           </div>
         </div>
 
         <!-- Right: Address -->
         <div>
           <div class="text-xs font-mono text-zinc-400 uppercase tracking-[0.2em] mb-4 font-medium">
-            REGISTERED OFFICE
+            ADDRESS
           </div>
-          <p class="text-xs sm:text-sm font-mono text-zinc-300 leading-relaxed mb-4">
+          <p class="text-xs font-mono text-zinc-300 leading-relaxed">
             Office 5, 5th Floor, Surya TI Mall,<br>
             Junwani Road, Smriti Nagar,<br>
-            Bhilai, Chhattisgarh 490020, India
+            Bhilai,<br>
+            Chhattisgarh 490020, India
           </p>
-          <div class="text-xs font-mono text-zinc-400 pt-2 border-t border-white/[0.06]">
-            Serving clients across India, USA, UK, and Global Tech Hubs.
-          </div>
         </div>
 
       </div>
@@ -661,7 +598,7 @@
       © 2026 AANANDI TECHNOSOFT PVT. LTD.
     </div>
     <div class="flex items-center gap-6">
-      <a href="#what-we-build" class="hover:text-white transition-colors">Services</a>
+      <a href="#engineering" class="hover:text-white transition-colors">Engineering</a>
       <a href="#process" class="hover:text-white transition-colors">Sprints</a>
       <a href="#products" class="hover:text-white transition-colors">IP Licensing</a>
       <a href="#" class="hover:text-white transition-colors">Privacy</a>
@@ -692,7 +629,7 @@
 
       <div id="specStack" class="flex flex-wrap gap-2 mb-6"></div>
 
-      <div class="space-y-4 text-sm text-zinc-300 leading-relaxed border-t border-white/[0.08] pt-5">
+      <div class="space-y-4 text-sm text-zinc-200 leading-relaxed border-t border-white/[0.08] pt-5">
         <div>
           <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest block mb-1 font-medium">System Architecture Overview</span>
           <p id="specOverview" class="text-zinc-200"></p>

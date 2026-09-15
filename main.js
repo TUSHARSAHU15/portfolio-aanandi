@@ -1,6 +1,6 @@
 /**
  * Aanandi Technosoft - Interactive Experience Engine
- * Micro-Animations, Animated Counters & Spec Modal
+ * Enhanced with Animated Number Counters, Marquee & Micro-Interactions
  */
 
 // Product Specs Database for "Battle-Tested" products
@@ -98,42 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('Lenis scroll skipped:', err);
   }
 
-  // 2. Animated Number Counters on Scroll
+  // 2. GSAP Fade-in Reveals on Scroll
   if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-    const counterElements = [
-      { id: 'stat-years', target: 12, suffix: '+' },
-      { id: 'stat-downloads', target: 3, suffix: 'M+' },
-      { id: 'stat-revenue', target: 1, prefix: '$', suffix: 'B+' },
-      { id: 'stat-ip', target: 100, suffix: '%' }
-    ];
-
-    counterElements.forEach((item) => {
-      const el = document.getElementById(item.id);
-      if (!el) return;
-
-      const obj = { val: 0 };
-      gsap.to(obj, {
-        val: item.target,
-        duration: 1.8,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '#track-record',
-          start: 'top 85%',
-          toggleActions: 'play none none none'
-        },
-        onUpdate: () => {
-          const current = Math.round(obj.val);
-          const prefix = item.prefix || '';
-          const suffix = item.suffix || '';
-          el.textContent = `${prefix}${current}${suffix}`;
-        }
-      });
-    });
-
-    // Fade-in reveals for sections
     gsap.utils.toArray('.reveal-fade').forEach((el) => {
       gsap.fromTo(el,
-        { opacity: 0, y: 25 },
+        { opacity: 0, y: 22 },
         {
           scrollTrigger: {
             trigger: el,
@@ -142,24 +111,63 @@ document.addEventListener('DOMContentLoaded', () => {
           },
           opacity: 1,
           y: 0,
-          duration: 0.8,
+          duration: 0.75,
           ease: 'power2.out'
         }
       );
     });
-  }
 
-  // 3. Mouse-Tracking Spotlight Cards
-  const cards = document.querySelectorAll('.spotlight-card');
-  cards.forEach((card) => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
-    });
-  });
+    // 3. Animated Number Counter for Stats Strip
+    const statYears = document.getElementById('stat-years');
+    const statDownloads = document.getElementById('stat-downloads');
+    const statRevenue = document.getElementById('stat-revenue');
+    const statIp = document.getElementById('stat-ip');
+
+    if (statYears && statDownloads && statRevenue && statIp) {
+      ScrollTrigger.create({
+        trigger: '#track-record',
+        start: 'top 85%',
+        once: true,
+        onEnter: () => {
+          // Years Counter
+          const yearsObj = { val: 0 };
+          gsap.to(yearsObj, {
+            val: 12,
+            duration: 1.6,
+            ease: 'power2.out',
+            onUpdate: () => { statYears.textContent = Math.floor(yearsObj.val) + '+'; }
+          });
+
+          // Downloads Counter
+          const downObj = { val: 0 };
+          gsap.to(downObj, {
+            val: 3,
+            duration: 1.8,
+            ease: 'power2.out',
+            onUpdate: () => { statDownloads.textContent = Math.floor(downObj.val) + 'M+'; }
+          });
+
+          // Revenue Counter
+          const revObj = { val: 0 };
+          gsap.to(revObj, {
+            val: 1,
+            duration: 1.5,
+            ease: 'power2.out',
+            onUpdate: () => { statRevenue.textContent = '$' + Math.floor(revObj.val) + 'B+'; }
+          });
+
+          // IP Ownership Counter
+          const ipObj = { val: 0 };
+          gsap.to(ipObj, {
+            val: 100,
+            duration: 2,
+            ease: 'power2.out',
+            onUpdate: () => { statIp.textContent = Math.floor(ipObj.val) + '%'; }
+          });
+        }
+      });
+    }
+  }
 
   // 4. Product Spec Modal Handling
   const modal = document.getElementById('specModal');
@@ -182,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stackContainer.innerHTML = '';
     data.stack.forEach((tech) => {
       const pill = document.createElement('span');
-      pill.className = 'px-3 py-1 rounded-full text-xs font-mono bg-white/[0.06] border border-white/10 text-zinc-200';
+      pill.className = 'px-3 py-1 rounded-full text-xs font-mono bg-white/[0.06] border border-white/10 text-zinc-300';
       pill.textContent = tech;
       stackContainer.appendChild(pill);
     });
@@ -191,8 +199,8 @@ document.addEventListener('DOMContentLoaded', () => {
     capContainer.innerHTML = '';
     data.capabilities.forEach((cap) => {
       const li = document.createElement('li');
-      li.className = 'flex items-start gap-2.5 text-sm text-zinc-300';
-      li.innerHTML = `<span class="text-white mt-0.5">✦</span><span>${cap}</span>`;
+      li.className = 'flex items-start gap-2 text-sm text-zinc-300';
+      li.innerHTML = `<span class="text-white mt-1">✦</span><span>${cap}</span>`;
       capContainer.appendChild(li);
     });
 
