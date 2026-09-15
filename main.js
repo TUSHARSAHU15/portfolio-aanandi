@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data.capabilities.forEach((cap) => {
       const li = document.createElement('li');
       li.className = 'flex items-start gap-2 text-sm text-zinc-300';
-      li.innerHTML = `<span class="text-[#FFD500] mt-1">✦</span><span>${cap}</span>`;
+      li.innerHTML = `<span class="text-zinc-400 mt-1">✦</span><span>${cap}</span>`;
       capContainer.appendChild(li);
     });
 
