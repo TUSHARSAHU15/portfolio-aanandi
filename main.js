@@ -691,5 +691,100 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     requestAnimationFrame(animateCursorGrid);
   }
+
+  // 7. Initialize Lucide Icons
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  // 8. In-Page Contact Form Interactive Handling
+  const contactForm = document.getElementById('contactForm');
+  const contactSuccessState = document.getElementById('contactSuccessState');
+  const contactSubmitBtn = document.getElementById('contactSubmitBtn');
+  const contactSubmitText = document.getElementById('contactSubmitText');
+  const contactSubmitSpinner = document.getElementById('contactSubmitSpinner');
+  const contactSubmitArrow = document.getElementById('contactSubmitArrow');
+  const contactResetBtn = document.getElementById('contactResetBtn');
+  const contactSuccessWhatsAppLink = document.getElementById('contactSuccessWhatsAppLink');
+
+  if (contactForm && contactSuccessState) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Simple validity check
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      // Read form data for custom WhatsApp fallback & telemetry
+      const name = document.getElementById('contactName')?.value.trim() || 'Client';
+      const email = document.getElementById('contactEmail')?.value.trim() || '';
+      const serviceSelect = document.getElementById('contactService');
+      const serviceText = serviceSelect?.options[serviceSelect.selectedIndex]?.text || 'Software Project';
+      const budgetSelect = document.getElementById('contactBudget');
+      const budgetText = budgetSelect?.options[budgetSelect.selectedIndex]?.text || 'Flexible';
+      const message = document.getElementById('contactMessage')?.value.trim() || '';
+
+      // Set Loading State
+      if (contactSubmitBtn) contactSubmitBtn.disabled = true;
+      if (contactSubmitText) contactSubmitText.textContent = 'Submitting Brief...';
+      if (contactSubmitSpinner) contactSubmitSpinner.classList.remove('hidden');
+      if (contactSubmitArrow) contactSubmitArrow.classList.add('hidden');
+
+      // Prepare custom WhatsApp message for instant follow-up
+      if (contactSuccessWhatsAppLink) {
+        const waText = encodeURIComponent(
+          `Hello Aanandi TechnoSoft,\n\nI just submitted a project brief on your website.\n\n` +
+          `• Name: ${name}\n` +
+          `• Email: ${email}\n` +
+          `• Project Type: ${serviceText}\n` +
+          `• Budget: ${budgetText}\n\n` +
+          `Brief: ${message.substring(0, 160)}${message.length > 160 ? '...' : ''}`
+        );
+        contactSuccessWhatsAppLink.href = `https://wa.me/919713846846?text=${waText}`;
+      }
+
+      // Simulate smooth async submission delay
+      setTimeout(() => {
+        // Reset submit button state
+        if (contactSubmitBtn) contactSubmitBtn.disabled = false;
+        if (contactSubmitText) contactSubmitText.textContent = 'Send Project Brief';
+        if (contactSubmitSpinner) contactSubmitSpinner.classList.add('hidden');
+        if (contactSubmitArrow) contactSubmitArrow.classList.remove('hidden');
+
+        // Transition form to success view
+        contactForm.classList.add('hidden');
+        contactSuccessState.classList.remove('hidden');
+
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo(contactSuccessState,
+            { opacity: 0, y: 15, scale: 0.98 },
+            { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: 'power2.out' }
+          );
+        }
+
+        // Re-render any icons inside success state
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+      }, 750);
+    });
+
+    if (contactResetBtn) {
+      contactResetBtn.addEventListener('click', () => {
+        contactForm.reset();
+        contactSuccessState.classList.add('hidden');
+        contactForm.classList.remove('hidden');
+
+        if (typeof gsap !== 'undefined') {
+          gsap.fromTo(contactForm,
+            { opacity: 0, y: 10 },
+            { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out' }
+          );
+        }
+      });
+    }
+  }
 });
 
