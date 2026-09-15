@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aanandi Technosoft · Custom Software & Product Engineering</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="We engineer custom software that businesses actually ship. Bespoke web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aanandi Technosoft · Custom Software & Product Engineering">
+  <meta property="og:description" content="We engineer custom software that businesses actually ship. Bespoke web platforms, native mobile apps, and vertical CRMs.">
+  <meta property="og:image" content="images/hospital-crm-showcase.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Newsreader (Editorial Serif), Inter, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN with Exact Design Tokens -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            void: '#070709',
+            obsidian: '#0b0b0e',
+            card: '#101014',
+            surface: '#141419',
+            subtle: '#a1a1aa',
+            muted: '#71717a'
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Animation & Icon Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Essential Companion Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-void text-white font-sans antialiased selection:bg-white/20 selection:text-white bg-noise min-h-screen">
+
+  <!-- =========================================================================
+       1. NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="border-b border-white/[0.06] bg-void/90 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <!-- Studio Logo -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-6 h-6 rounded bg-white text-zinc-950 flex items-center justify-center font-bold text-xs tracking-tight">
+          A
+        </div>
+        <span class="text-sm font-semibold tracking-tight text-white group-hover:text-zinc-200 transition-colors">
+          Aanandi Technosoft
+        </span>
+      </a>
+
+      <!-- Center Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-[11px] font-mono tracking-[0.16em] uppercase text-zinc-400">
+        <a href="#track-record" class="hover:text-white transition-colors">Track Record</a>
+        <a href="#engineering" class="hover:text-white transition-colors">Engineering</a>
+        <a href="#products" class="hover:text-white transition-colors">IP & Products</a>
+        <a href="#process" class="hover:text-white transition-colors">Process</a>
+      </nav>
+
+      <!-- Right Action Button -->
+      <a href="#contact" class="btn-shimmer bg-white text-zinc-950 hover:bg-zinc-200 font-medium text-xs px-4 py-2 rounded-full tracking-tight transition-all shadow-sm">
+        Discuss Project
+      </a>
+
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+    
+    <!-- =========================================================================
+         2. HERO SECTION
+         ========================================================================= -->
+    <section class="pt-20 sm:pt-28 pb-16 reveal-fade">
+      <div class="max-w-4xl">
+        <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[76px] font-normal text-white leading-[1.06] tracking-tight mb-6">
+          We engineer custom<br>
+          software that businesses<br>
+          <span class="italic font-normal">actually ship.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-zinc-400 max-w-2xl font-sans leading-relaxed mb-8">
+          Bespoke web platforms, native mobile apps, and vertical CRMs engineered for performance. 100% code ownership from day one.
+        </p>
+
+        <div class="flex items-center gap-4">
+          <a href="#contact" class="btn-shimmer px-6 py-3 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 font-medium text-sm tracking-tight transition-all flex items-center gap-1.5 shadow-md">
+            <span>Start a sprint</span>
+            <span>→</span>
+          </a>
+          <a href="#products" class="px-6 py-3 rounded-full bg-transparent text-zinc-300 hover:text-white border border-white/15 hover:border-white/30 font-medium text-sm tracking-tight transition-all">
+            Explore IP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. STATS STRIP (4 Columns)
+         ========================================================================= -->
+    <section id="track-record" class="pb-16 reveal-fade">
+      <div class="rounded-2xl bg-card border border-white/[0.08] grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/[0.08]">
+        
+        <div class="p-6 sm:p-8 flex flex-col justify-center">
+          <div class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">12+</div>
+          <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.18em] mt-1">Years of Engineering</div>
+        </div>
+
+        <div class="p-6 sm:p-8 flex flex-col justify-center">
+          <div class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">3M+</div>
+          <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.18em] mt-1">Downloads Delivered</div>
+        </div>
+
+        <div class="p-6 sm:p-8 flex flex-col justify-center">
+          <div class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">$1B+</div>
+          <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.18em] mt-1">Revenue Powered</div>
+        </div>
+
+        <div class="p-6 sm:p-8 flex flex-col justify-center">
+          <div class="text-3xl sm:text-4xl font-normal font-serif text-white tracking-tight">100%</div>
+          <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.18em] mt-1">IP Ownership</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. TRUST TICKER
+         ========================================================================= -->
+    <section class="pb-24 border-b border-white/[0.06] text-center reveal-fade">
+      <div class="text-[10px] font-mono text-zinc-500 tracking-[0.25em] uppercase mb-8">
+        Trusted by Global Leaders
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16 text-xs font-mono text-zinc-400 tracking-[0.15em] uppercase">
+        <span class="hover:text-white transition-colors">US Title & Escrow</span>
+        <span class="hover:text-white transition-colors">Healthcare Clinics</span>
+        <span class="hover:text-white transition-colors">DermaUI24</span>
+        <span class="hover:text-white transition-colors">Prime Laundry</span>
+        <span class="hover:text-white transition-colors">Tourbix</span>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. ENGINEERING & IP
+         ========================================================================= -->
+    <section id="engineering" class="py-24 border-b border-white/[0.06] reveal-fade">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight">
+            Engineering & IP.
+          </h2>
+          <p class="text-sm text-zinc-400 mt-2 max-w-xl font-sans leading-relaxed">
+            Modern, production-grade technologies we actively staff — paired with battle-tested software modules ready to customize.
+          </p>
+        </div>
+        <a href="#contact" class="text-xs font-mono text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5 whitespace-nowrap">
+          <span>Consult on feasibility</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- 4 Capability Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-300 mb-6">
+              <i data-lucide="layout" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Frontend & Web</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-mono">
+              React, Next.js, TypeScript.<br>
+              High-performance SPAs and SSR portals.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-300 mb-6">
+              <i data-lucide="server" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Backend & Cloud</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-mono">
+              Laravel, Node.js, PostgreSQL.<br>
+              High-throughput microservices.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-300 mb-6">
+              <i data-lucide="smartphone" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Mobile Apps</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-mono">
+              Flutter & React Native.<br>
+              Deployed to Play Store and App Store.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-card border border-white/[0.08] hover:border-white/20 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-zinc-300 mb-6">
+              <i data-lucide="cpu" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">AI & Automation</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed font-mono">
+              Meta API, LLM Agents, RAG knowledge bases, and computer vision.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. BATTLE-TESTED PRODUCTS (2x2 Grid)
+         ========================================================================= -->
+    <section id="products" class="py-24 border-b border-white/[0.06] reveal-fade">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight mb-2">
+          Battle-Tested.
+        </h2>
+        <p class="text-sm text-zinc-400 font-sans">
+          Proprietary products available for immediate deployment or custom extension.
+        </p>
+      </div>
+
+      <!-- 2x2 Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Product 1: Ayurvedic CRM -->
+        <div class="rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/20 transition-all group flex flex-col">
+          <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.06]">
+            <img src="images/hospital-crm-showcase.jpg" alt="Ayurvedic CRM" class="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500 ease-out">
+          </div>
+          <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
+            <div>
+              <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+                HEALTHCARE • PRODUCTION
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">Ayurvedic CRM</h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-sans mb-6">
+                OPD, IPD, therapy packages, and pharmacy billing shipped as a mobile-first product for Ayurvedic clinics.
+              </p>
+            </div>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.15em] flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-product="ayurvedic-crm">
+              <span>PRODUCT SPEC</span>
+              <span>&gt;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: WhatsApp WAPI -->
+        <div class="rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/20 transition-all group flex flex-col">
+          <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.06]">
+            <img src="images/ai-saas-showcase.jpg" alt="WhatsApp WAPI" class="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500 ease-out">
+          </div>
+          <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
+            <div>
+              <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+                AI SAAS • META API
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">WhatsApp WAPI</h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-sans mb-6">
+                AI first-response on WhatsApp and Meta socials to capture leads after hours with seamless human handoff.
+              </p>
+            </div>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.15em] flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-product="whatsapp-wapi">
+              <span>PRODUCT SPEC</span>
+              <span>&gt;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: AI Bulk Mailer -->
+        <div class="rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/20 transition-all group flex flex-col">
+          <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.06]">
+            <img src="images/bulk-mailer-showcase.jpg" alt="AI Bulk Mailer" class="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500 ease-out">
+          </div>
+          <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
+            <div>
+              <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+                GROWTH • EMAIL PRODUCTION
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">AI Bulk Mailer</h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-sans mb-6">
+                AI-assisted campaigns: write, segment, send and track bulk email without a separate copy team.
+              </p>
+            </div>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.15em] flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-product="bulk-mailer">
+              <span>PRODUCT SPEC</span>
+              <span>&gt;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: Tiffin SaaS -->
+        <div class="rounded-2xl bg-card border border-white/[0.08] overflow-hidden hover:border-white/20 transition-all group flex flex-col">
+          <div class="aspect-[16/10] bg-black/40 overflow-hidden relative border-b border-white/[0.06]">
+            <img src="images/tiffin-saas-showcase.jpg" alt="Tiffin SaaS" class="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500 ease-out">
+          </div>
+          <div class="p-6 sm:p-8 flex flex-col justify-between flex-1">
+            <div>
+              <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+                F&B • MULTI-TENANT
+              </span>
+              <h3 class="text-xl font-bold text-white mb-2">Tiffin SaaS</h3>
+              <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-sans mb-6">
+                SaaS for tiffin and cloud-kitchen operators: menus, subscriptions, delivery slots and operator consoles.
+              </p>
+            </div>
+            <button class="product-spec-trigger text-left text-xs font-mono text-zinc-300 hover:text-white uppercase tracking-[0.15em] flex items-center gap-1 group-hover:translate-x-1 transition-transform" data-product="tiffin-saas">
+              <span>PRODUCT SPEC</span>
+              <span>&gt;</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. THE SPRINTS (6 Steps Grid)
+         ========================================================================= -->
+    <section id="process" class="py-24 border-b border-white/[0.06] reveal-fade">
+      <div class="mb-14">
+        <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight">
+          <span class="italic font-normal">The</span> Sprints.
+        </h2>
+      </div>
+
+      <!-- 6-step 3x2 Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+          <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+            01 / DISCOVERY
+          </span>
+          <h3 class="text-lg font-bold text-white mb-2">Qualified Lead</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Inbound call, form or referral. We acknowledge the same business day and book a discovery slot.
+          </p>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+          <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+            02 / STRATEGY
+          </span>
+          <h3 class="text-lg font-bold text-white mb-2">Discovery Call</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Goals, users, constraints, integrations. We decide fit against ideal-project and exclusion criteria.
+          </p>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+          <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+            03 / FEASIBILITY
+          </span>
+          <h3 class="text-lg font-bold text-white mb-2">Technical Audit</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Engineering lead validates stack, risks and estimate drivers. No proposal without this sign-off.
+          </p>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+          <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+            04 / COMMERCIALS
+          </span>
+          <h3 class="text-lg font-bold text-white mb-2">Scoped Proposal</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Commercial owner prices the engagement. Proposal goes out after technical + commercial approval.
+          </p>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+          <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+            05 / EXECUTION
+          </span>
+          <h3 class="text-lg font-bold text-white mb-2">Build in Sprints</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Design → agile development → QA. You see working, production-ready software every single iteration.
+          </p>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08]">
+          <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-2">
+            06 / DEPLOYMENT
+          </span>
+          <h3 class="text-lg font-bold text-white mb-2">Launch & Retain</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            CI/CD deploy, training, monitoring, and a support retainer so the product evolves after go-live.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. ENGAGEMENT MODELS (3 Cards with Middle Highlight)
+         ========================================================================= -->
+    <section class="py-24 border-b border-white/[0.06] reveal-fade">
+      <div class="mb-14">
+        <h2 class="font-serif text-4xl sm:text-5xl font-normal text-white tracking-tight">
+          Engagement Models.
+        </h2>
+      </div>
+
+      <!-- 3 Engagement Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- Card 1: Fixed-Scope MVP -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2">Fixed-Scope MVP</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6 font-sans">
+              Guaranteed milestone delivery with locked budget and defined launch dates.
+            </p>
+          </div>
+          <div class="space-y-2 pt-4 border-t border-white/[0.06] text-xs font-mono text-zinc-300">
+            <div class="flex items-center gap-2">
+              <span class="text-zinc-500">✓</span>
+              <span>Locked scope & budget</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-zinc-500">✓</span>
+              <span>Milestone payouts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Dedicated Squad (MOST POPULAR - High Contrast White Card) -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-white text-zinc-950 shadow-2xl flex flex-col justify-between relative transform md:-translate-y-2">
+          <div>
+            <span class="inline-block bg-zinc-950 text-white text-[10px] font-mono uppercase px-2.5 py-0.5 rounded tracking-[0.16em] font-semibold mb-3">
+              MOST POPULAR
+            </span>
+            <h3 class="text-xl font-bold text-zinc-950 mb-2">Dedicated Squad</h3>
+            <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed mb-6 font-sans">
+              Senior full-stack engineers and QA embedded into your team for high development velocity.
+            </p>
+          </div>
+          <div class="space-y-2 pt-4 border-t border-zinc-200 text-xs font-mono text-zinc-800">
+            <div class="flex items-center gap-2">
+              <span class="text-zinc-950 font-bold">⚡</span>
+              <span>Predictable monthly cost</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-zinc-950 font-bold">⚡</span>
+              <span>Rapid weekly releases</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Time & Materials -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-card border border-white/[0.08] flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2">Time & Materials</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-6 font-sans">
+              Agile iteration where requirements adapt sprint-to-sprint with transparent hourly billing.
+            </p>
+          </div>
+          <div class="space-y-2 pt-4 border-t border-white/[0.06] text-xs font-mono text-zinc-300">
+            <div class="flex items-center gap-2">
+              <span class="text-zinc-500">✓</span>
+              <span>Start before final spec</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-zinc-500">✓</span>
+              <span>Adapt sprint to sprint</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. CONTACT & FOOTER SECTION
+         ========================================================================= -->
+    <section id="contact" class="py-24 border-b border-white/[0.06] reveal-fade">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16">
+        
+        <!-- Left: Statement & WhatsApp -->
+        <div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal text-white leading-[1.12] mb-6">
+            A brief today.<br>
+            A scoped reply<br>
+            <span class="italic font-normal">this week.</span>
+          </h2>
+          <a href="https://wa.me/919713846846" target="_blank" rel="noopener noreferrer" class="btn-shimmer inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 text-xs font-semibold tracking-tight transition-all shadow-md">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Middle: Contact Details -->
+        <div>
+          <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.2em] mb-4">
+            CONTACT
+          </div>
+          <div class="space-y-2 text-sm font-mono text-zinc-300">
+            <a href="mailto:info@aanandi.in" class="hover:text-white transition-colors block">
+              info@aanandi.in
+            </a>
+            <a href="tel:+919713846846" class="hover:text-white transition-colors block">
+              +91 9713 846 846
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Address -->
+        <div>
+          <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.2em] mb-4">
+            ADDRESS
+          </div>
+          <p class="text-xs font-mono text-zinc-400 leading-relaxed">
+            Office 5, 5th Floor, Surya TI Mall,<br>
+            Junwani Road, Smriti Nagar,<br>
+            Bhilai,<br>
+            Chhattisgarh 490020, India
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       10. BOTTOM LEGAL BAR
+       ========================================================================= -->
+  <footer class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between text-[10px] font-mono text-zinc-500 tracking-[0.16em] uppercase gap-4">
+    <div>
+      © 2026 AANANDI TECHNOSOFT PVT. LTD.
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="#engineering" class="hover:text-zinc-300 transition-colors">Engineering</a>
+      <a href="#process" class="hover:text-zinc-300 transition-colors">Sprints</a>
+      <a href="#products" class="hover:text-zinc-300 transition-colors">IP Licensing</a>
+      <a href="#" class="hover:text-zinc-300 transition-colors">Privacy</a>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       11. INTERACTIVE PRODUCT SPEC MODAL
+       ========================================================================= -->
+  <div id="specModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6">
+    <div id="specBackdrop" class="absolute inset-0 bg-black/80 backdrop-blur-md"></div>
+    <div id="specContainer" class="relative w-full max-w-2xl max-h-[90vh] bg-card border border-white/10 rounded-3xl overflow-y-auto shadow-2xl p-6 sm:p-8 z-10">
+      
+      <!-- Close Button -->
+      <button id="specCloseBtn" class="absolute top-6 right-6 text-zinc-400 hover:text-white font-mono text-lg" aria-label="Close">
+        ✕
+      </button>
+
+      <div class="mb-4">
+        <span id="specTag" class="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.16em] block mb-1">Tag</span>
+        <h3 id="specTitle" class="text-2xl sm:text-3xl font-bold text-white mb-1">Product Title</h3>
+        <p id="specSubtitle" class="text-sm text-zinc-400 font-sans">Product Subtitle</p>
+      </div>
+
+      <div class="rounded-xl overflow-hidden border border-white/10 mb-6 aspect-[16/10] bg-black">
+        <img id="specImage" src="images/hospital-crm-showcase.jpg" alt="Preview" class="w-full h-full object-cover object-top">
+      </div>
+
+      <div id="specStack" class="flex flex-wrap gap-2 mb-6"></div>
+
+      <div class="space-y-4 text-sm text-zinc-300 leading-relaxed border-t border-white/[0.08] pt-5">
+        <div>
+          <span class="text-xs font-mono text-zinc-500 uppercase tracking-widest block mb-1">System Architecture Overview</span>
+          <p id="specOverview" class="text-zinc-300"></p>
+        </div>
+
+        <div>
+          <span class="text-xs font-mono text-zinc-500 uppercase tracking-widest block mb-2">Core Product Capabilities</span>
+          <ul id="specCapabilities" class="space-y-1.5 font-sans"></ul>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white/[0.03] border border-white/[0.06]">
+          <span class="text-xs font-mono text-zinc-400 uppercase tracking-widest block mb-1">Production Impact</span>
+          <p id="specImpact" class="text-white font-medium"></p>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-5 border-t border-white/[0.08] flex items-center justify-between">
+        <span class="text-xs font-mono text-zinc-500">100% Code Ownership</span>
+        <a href="#contact" onclick="document.getElementById('specCloseBtn').click();" class="btn-shimmer px-5 py-2.5 rounded-full bg-white text-zinc-950 hover:bg-zinc-200 font-medium text-xs">
+          Consult on Customization →
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
